@@ -27,7 +27,6 @@ at once, enjoy it - it will not last, and neither, historically, has the generat
 
 ## The uptime of the cabin side
 
-<div id="uptime-live" data-uptime><p class="fine">Loading the tally...</p></div>
 
 ## Formal SLA
 

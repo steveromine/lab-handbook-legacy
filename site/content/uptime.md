@@ -27,7 +27,6 @@ mortal.
 
 ## Running tally
 
-<div id="uptime-live" data-uptime><p class="fine">Loading the tally...</p></div>
 
 _Measured by a small probe that checks the public site every few minutes. No visitors are tracked -
 this measures the machine, not you._

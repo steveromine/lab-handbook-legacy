@@ -10,12 +10,11 @@ hero_lede: 'A green check is not proof - so here is a page that runs the checks 
 
 Press the button. Everything runs **in your browser**; nothing about you is sent anywhere.
 
-<div id="selftest" data-selftest><p class="fine">Press "Run the checks" to begin.</p></div>
 
 ## What is tested
 
 - **JavaScript is alive** - the page you are looking at is being enhanced right now.
-- **The API answers** - the comments and uptime endpoints respond.
+- **The API answered** - while the lab ran, the comments and uptime endpoints responded. Both have been retired with it.
 - **Images load** - the site's own generated pictures are reachable.
 - **Navigation works** - the menu elements exist and are wired.
 - **The theme toggles** - the light/dark control responds.

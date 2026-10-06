@@ -8,28 +8,13 @@ hero_lede: 'A lab is a stack of other people\'s work. This page names all of it 
 
 ## With thanks
 
-Before the software, the people - because they are the reason any of this is worth running.
+This lab ran for a short while as an experiment, and it did not run alone. It owes a real debt to
+**everyone who gave feedback, made a suggestion, offered a correction, or asked the right question at
+the right moment** - and to the open-source maintainers whose work it is built on. Thank you.
 
-Not everything here is a dependency. Some of it is **inspiration** - people whose work, curiosity or
-plain stubbornness shaped how this lab approaches a problem. With thanks, in no particular order:
-
-- **Hugh**
-- **Ian**
-- **Ilya**
-- **Captain Tim**
-- **Sean**
-- **Jill**
-- **Tina**
-- **Brad**
-- **Kayla**
-- **Violet**
-- **Emmie**
-- **The DevSecOps group**
-- **ET**
-- **Jeremy**
-
-...and many others who lent a thought, a correction or the right question at the right moment.
-The good ideas are partly theirs; the mistakes remain entirely the lab's.
+Names are deliberately not listed here. This page was written for a moment in time; the people who
+helped are not a footnote to it, and a list frozen at one date would misrepresent a longer story. The
+thanks are genuine and they are general, on purpose.
 
 Humans are credited first on this page on purpose. The lab exists to learn how to build an AI platform that **integrates people into the process rather than replacing them** - the argument for that is on [About](/about/).
 

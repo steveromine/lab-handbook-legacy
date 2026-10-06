@@ -78,7 +78,6 @@ Reconciled against the running system, not against intention:
   completed work; see the [org chart](/agents/).
 - **A reviewed backlog** - anyone can [ask for a change](/requests/); it is reviewed before it is
   published.
-- **[Ask the handbook](/ask/)** - a small assistant that answers only from this site, with no tools
   and nothing outside.
 - **[The service map](/service-map/)** - what is reachable from where, with the probe results behind
   it and the untested paths marked *untested* rather than assumed.

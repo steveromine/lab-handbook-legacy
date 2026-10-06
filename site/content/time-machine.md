@@ -3,11 +3,18 @@ title: 'Time machine'
 description: 'Every change to this site, from the first commit to now - the lab's own history, as far back as it goes.'
 eyebrow: 'As far back as it goes'
 hero_title: 'The time machine'
-hero_lede: 'Nothing here is hidden behind a curtain. This is the full history of the handbook - 179 recorded changes from 2026-10-01 to 2026-10-05 - so you can watch the thinking change, mistakes and all.'
+hero_lede: 'Nothing here is hidden behind a curtain. This is the full history of the handbook - 183 recorded changes from 2026-10-01 to 2026-10-06 - so you can watch the thinking change, mistakes and all.'
 ---
 
 Every commit to this site, newest first. The point is not that the lab got everything right; it is
 that you can see **how it changed** - including the places it changed its mind.
+
+## 2026-10-06
+
+- `f5608af` — site: promote Manual override to its own Governance page; add the documentation standard
+- `007eb5a` — site: add a Manual override section to Governance (keeping agency over the machine)
+- `2d0b7f9` — site: publish the sanitised management access guide (running it by hand)
+- `0bd4b57` — site: publish the worker-access audit results; commit the homepage purpose section
 
 ## 2026-10-05
 
