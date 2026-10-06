@@ -230,7 +230,6 @@ function searchIndex(pages) {
   const json = JSON.stringify(entries);
   // Fail loudly rather than publish an index that cannot be parsed.
   try { JSON.parse(json); } catch (e) { console.error('SEARCH INDEX GATE: generated index is not valid JSON: ' + e.message); process.exit(2); }
-  write('search-index.json', json);
 }
 
 function sitemap(pages) {
