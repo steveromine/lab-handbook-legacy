@@ -1,0 +1,10 @@
+{
+  "name": "lab-handbook-legacy",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Static legacy record of the Lab Handbook (retired).",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "build": "node site/build.mjs"
+  }
+}
