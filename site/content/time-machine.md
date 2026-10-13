@@ -3,7 +3,7 @@ title: 'Time machine'
 description: 'Every change to this site, from the first commit to now - the lab's own history, as far back as it goes.'
 eyebrow: 'As far back as it goes'
 hero_title: 'The time machine'
-hero_lede: 'Nothing here is hidden behind a curtain. This is the full history of the handbook - 193 recorded changes from 2026-10-01 to 2026-10-13 - so you can watch the thinking change, mistakes and all.'
+hero_lede: 'Nothing here is hidden behind a curtain. This is the full history of the handbook - 194 recorded changes from 2026-10-01 to 2026-10-13 - so you can watch the thinking change, mistakes and all.'
 ---
 
 Every commit to this site, newest first. The point is not that the lab got everything right; it is
@@ -11,6 +11,7 @@ that you can see **how it changed** - including the places it changed its mind.
 
 ## 2026-10-13
 
+- `ebd35c9` — site: professional pass 2 - revival banner and operator portrait removed; comment quotes and wording censored
 - `f76b86a` — site: professional pass 1 - remove gallery/side-quests surfaces, rework operator page, sharpen front page
 - `d2e3cff` — revive: restore live components (search, chatbot, request form) + the Kubernetes story
 - `fc06825` — gallery: daily song 2026-10-13 (lab facebook/musicgen-small) - Back in Print
@@ -167,7 +168,7 @@ that you can see **how it changed** - including the places it changed its mind.
 - `a7ba03f` — fix: repair theme/rating button markup (build was broken); gate: allow reference domains
 - `326cf06` — site: G/PG-13 rating toggle; privacy - verify yourself (EFF/Blacklight/Webbkoll)
 - `c958411` — site: G/PG-13 rating toggle - swaps strong language and hides the age note in G
-- `8e26bc6` — site: tell the truth about the power (no UPS, raw-dogging the mains); tag song + images with model metadata
+- `8e26bc6` — site: tell the truth about the power (no UPS, straight off the mains); tag song + images with model metadata
 - `62faead` — site: outage page (502, but funny) + brand sample link
 - `64330c3` — site: hilarious cabin outage board + self-test page (linked from brand)
 - `adc75d0` — site: full status/backlog refresh (2026-10-02)

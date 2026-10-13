@@ -30,11 +30,18 @@ for (const r of rows) {
 }
 const days = [...byDate.keys()].sort().reverse();
 
+// Tone redactions for the public display only (operator request, 2026-10-13): every change is
+// still shown, but coarse phrasing is softened on the page. Git history itself is NOT rewritten.
+const REDACTIONS = [
+  [/raw-dogging the mains/gi, 'straight off the mains'],
+];
+const redact = (s) => REDACTIONS.reduce((acc, [re, to]) => acc.replace(re, to), s);
+
 let body = '';
 for (const d of days) {
   body += '## ' + d + '\n\n';
   for (const r of byDate.get(d)) {
-    body += '- \`' + r.h + '\` — ' + r.s.replace(/\|/g, '/') + '\n';
+    body += '- \`' + r.h + '\` — ' + redact(r.s.replace(/\|/g, '/')) + '\n';
   }
   body += '\n';
 }
