@@ -3,7 +3,7 @@ title: 'Productionish'
 description: 'The parts of the lab the operator actually depends on - the media and library stack - kept in the lab on purpose, as the most honest fault-finding rig available.'
 eyebrow: 'Productionish'
 hero_title: 'Productionish: real use, on purpose'
-hero_lede: 'Not demos, and not side quests. These are services the operator genuinely relies on, run inside the lab deliberately - because something you depend on is the only test that does not flatter you.'
+hero_lede: 'Not demos, and not prototypes. These are services the operator genuinely relies on, run inside the lab deliberately - because something you depend on is the only test that does not flatter you.'
 ---
 
 ## Why these live here

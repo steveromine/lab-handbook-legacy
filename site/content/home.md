@@ -7,8 +7,19 @@ hero_lede: 'Not because a model got smarter, but because the boring half of runn
 facts: true
 ---
 
-> **Scope.** A field notebook from one person's home lab - an experiment, not a product. It exists to
-> show how far today's tools reach, and to be honest about what is proved and what is not.
+> **Scope.** One person's lab, published in the open: a working experiment, not a product. It exists
+> to show how far today's tools reach - and it is honest about what is proved and what is not.
+
+## Where it stands, as of 2026-10-13
+
+- **Proven in the record:** agents finding real faults and fixing them with before/after evidence; a
+  publication pipeline that fails closed rather than shipping a leak; a backup restored to an isolated
+  scratch guest and its data read back.
+- **In progress:** a Kubernetes experiment past its first milestone - pod Ready, state persisting -
+  and well short of production; daily worker duties proving reliable after the failure that stopped
+  them for a week; a repeat estate audit before a single pass counts as a record.
+- **Not claimed:** production readiness, high availability, or that every service is healthy. The
+  [status page](/status/) carries the full ledger, gaps included.
 
 ## The result, first
 
@@ -23,8 +34,8 @@ end to end:
   the [status page](/status/).
 
 Three agents have found and fixed real faults this way, including a publication gate that was
-silently blocking deploys. See [The team at work](#the-team-at-work), or watch
-[see the agent at work](/demos/).
+silently blocking deploys. See [The team at work](#the-team-at-work), or
+[watch the agent at work](/demos/).
 
 ## The newest chapter: a pause, a revival, and a Kubernetes experiment
 
@@ -99,12 +110,12 @@ every recurring agent job to at most once a day, so these are daily duties in a 
 | **Forge** | Ships one small verified improvement a day | Runs completed |
 | **Sentinel** | Health sweep once a day; reviews public requests on the same cadence | Running |
 | **Ledger** | Reconciles public and private documentation daily | Runs completed |
-| **Atlas** | Audits the estate daily - proves or disproves what is configured | Run completed; daily audit unproven |
+| **Atlas** | Audits the estate daily - proves or disproves what is configured | First full estate audit closed 2026-10-13; one pass is not yet a record |
 
-The count is deliberately unflattering where it should be: **Atlas has completed runs but its
-scheduled daily estate audit has still not passed**, so estate drift-auditing is described as
-unproven rather than claimed. A role that stops performing is demoted or removed - see the
-[accountability policy](/agents/).
+The count is deliberately unflattering where it should be: **Atlas closed its first full estate
+audit on 2026-10-13** - live probes, an inventory and durable findings - but one good run is not yet
+a reliability record, so estate drift-auditing stays described as unproven rather than claimed. A
+role that stops performing is demoted or removed - see the [accountability policy](/agents/).
 
 ## Licence and credit
 
@@ -117,7 +128,7 @@ warranty.**
 
 Bundled third-party components and the models keep their own licences, and generated media names the
 model that produced it - credit where it is due, blame nowhere it is not. Full text:
-[LICENSE](https://github.com/steveromine/lab-handbook/blob/main/LICENSE). The
+[LICENSE](https://github.com/steveromine/lab-handbook-legacy/blob/main/LICENSE). The
 [licence page](/license/) names the split and, honestly, the closed things this lab still leans on.
 
 ## About this lab, as of 2026-10-13

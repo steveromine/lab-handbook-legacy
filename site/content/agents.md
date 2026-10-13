@@ -2,7 +2,7 @@
 title: 'The agent org chart'
 description: 'Five specified agent roles, all now configured and scheduled. Who exists, what each may not do, how far the specialists really go, and why the authority matrix matters more than the personalities.'
 hero_title: 'The agent org chart'
-hero_lede: "An org chart drawn before the team exists is a specification, not a description. All five roles below are configured and scheduled and each has now completed at least one run; the fifth of them has a scheduled estate audit that is still unproven. Being precise about how far each really goes is the point of the page."
+hero_lede: "An org chart drawn before the team exists is a specification, not a description. All five roles below are configured and scheduled and each has now completed at least one run; the fifth of them closed its first full estate audit on 2026-10-13 - one pass, not yet a record. Being precise about how far each really goes is the point of the page."
 ---
 
 ## One agent, two names - and a bigger roster than the chart
@@ -84,7 +84,7 @@ The Manager reports to the operator and to no one else. **Sentinel's audit findi
 
 ### What that means in practice
 
-The **Manager** is the coordinator: it takes a task, decomposes it, picks a model and tools, verifies the outcome and reports. Forge, Sentinel, Atlas and Ledger now exist as configured agents with scheduled duties - builds and improvements, adversarial audits, reconnaissance and the records. All five roles have now completed at least one run; **Atlas first ran on 2026-10-03**, on the lab's own local model - but its scheduled daily estate audit has still not completed a successful pass, so that goal is called out as unproven below.
+The **Manager** is the coordinator: it takes a task, decomposes it, picks a model and tools, verifies the outcome and reports. Forge, Sentinel, Atlas and Ledger now exist as configured agents with scheduled duties - builds and improvements, adversarial audits, reconnaissance and the records. All five roles have now completed at least one run; **Atlas first ran on 2026-10-03**, on the lab's own local model - but its scheduled daily estate audit closed only one full pass, on 2026-10-13, so that goal is still called out as unproven below.
 
 The honest caveat: the worker roles do not run on the frontier-class model the routing table describes - they run on the lab's own local model, with the manager alone on the paid cloud route. The frontier split is the target, not the present. "Live" here means an agent has an identity, a job and a schedule (and, for Atlas, has completed a run) - not that it is a different class of model.
 

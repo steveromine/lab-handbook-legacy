@@ -60,7 +60,6 @@ const STORY = [
   { slug: '/demos/', file: 'demos.md', nav: '/demos/', section: 'Story' },
   { slug: '/service-map/', file: 'service-map.md', nav: '/service-map/', section: 'Story' },
   { slug: '/osint/', file: 'osint.md', nav: '/osint/', section: 'Story' },
-  { slug: '/side-quests/', file: 'side-quests.md', nav: '/side-quests/', section: 'Story' },
   { slug: '/productionish/', file: 'productionish.md', nav: '/productionish/', section: 'Story' },
   { slug: '/run/', file: 'run.md', nav: '/run/', section: 'Story' },
   { slug: '/credits/', file: 'credits.md', nav: '/credits/', section: 'Story' },
@@ -69,7 +68,6 @@ const STORY = [
   { slug: '/futures/', file: 'futures.md', nav: '/futures/', section: 'Story' },
   { slug: '/privacy/', file: 'privacy.md', nav: '/privacy/', section: 'Story' },
   { slug: '/backlog/', file: 'backlog.md', nav: '/backlog/', section: 'Story' },
-  { slug: '/gallery/', file: 'gallery.md', nav: '/gallery/', section: 'Story' },
   { slug: '/uptime/', file: 'uptime.md', nav: '/uptime/', section: 'Story' },
   { slug: '/cabin/', file: 'cabin.md', nav: '/cabin/', section: 'Story' },
   { slug: '/test/', file: 'test.md', nav: '/test/', section: 'Story' },
@@ -126,14 +124,14 @@ function heroHtml(meta) {
 
 const FACTS = [
   ['Hypervisor', '1', 'One physical Proxmox VE host. A deliberate single point of failure.'],
-  ['Running workloads', '39', 'Thirty-six containers and three virtual machines - seventeen LXC plus nineteen nested, and three VMs (snapshot 2026-10-05).'],
+  ['Running workloads', '38', 'Thirty-five containers and three virtual machines - sixteen container guests plus the nineteen containers nested inside them, each counted once (reconciled 2026-10-13).'],
   ['GPU', '8 GB', 'One consumer card, shared three ways on purpose.'],
   ['GPU workloads', '3', 'Resident LLM (~5 GB), streaming image model, bursty media transcode.'],
   ['Image generation', '1-4 steps', 'A distilled few-step model; ~1.5-2.5 s per image alongside the LLM.'],
   ['Network zones', '3', 'Management, untrusted client, servers.'],
   ['Public entry points', '1', 'A single hardened edge; lab services have no public listeners.'],
   ['Auth layers per service', '1', 'Exactly one - the app, or the edge. Never both.'],
-  ['Agent roles live', '5 of 5', 'Manager, Forge, Sentinel, Ledger and Atlas have each completed real runs, verified in the job log. The scheduled daily estate audit has not yet completed a successful pass, so drift-auditing is still unproven.'],
+  ['Agent roles live', '5 of 5', 'Manager, Forge, Sentinel, Ledger and Atlas have each completed real runs, verified in the job log. Atlas closed its first full estate audit on 2026-10-13; one pass is not yet a reliability record, so consistent drift-auditing stays unproven.'],
 ];
 
 function factsHtml() {

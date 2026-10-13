@@ -56,7 +56,6 @@ export const NAV = [
     { href: '/demos/', label: 'Demos' },
     { href: '/service-map/', label: 'Service map' },
     { href: '/run/', label: 'Agent run' },
-    { href: '/side-quests/', label: 'Side quests' },
     { href: '/productionish/', label: 'Productionish' },
     { href: '/credits/', label: 'Credits' },
     { href: '/then-and-now/', label: 'Then & Now' },
@@ -88,8 +87,7 @@ export const NAV = [
     { href: '/brand/', label: 'Brand sheet' },
     { href: '/time-machine/', label: 'Time machine' },
     { href: '/uptime/', label: 'Uptime (nines)' },
-    { href: '/cabin/', label: 'Cabin outage board' },
-    { href: '/gallery/', label: 'Gallery' },
+    { href: '/cabin/', label: 'Cabin outage board' }
   ] }
 ];
 
@@ -133,7 +131,7 @@ const RETIRE_BANNER = [
   '<aside class="notice-banner" role="note">',
   '<p><strong>Back online - and interactive again.</strong> The handbook sat frozen from 2026-10-06 and is live again from ',
   '2026-10-13: <a href="/ask/">the grounded chatbot</a>, <a href="/requests/">the request form</a> and site search are ',
-  'restored on their original backends, and the site is updated as the lab changes, including the daily image and song.</p>',
+  'restored on their original backends, and the site is updated as the lab changes.</p>',
   '</aside>'
 ].join('');
 

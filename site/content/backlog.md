@@ -39,7 +39,7 @@ the private register.
 | **Hypervisor root filesystem 80% full** | stability | The hypervisor's own root filesystem is at 80% used - the monitor's warn threshold - and trending up; reclaim space or grow it before it reaches the critical threshold. |
 | **Public request endpoint not independently tested** | security | The single request/answer endpoint (`/api/request`) is rate-limited, proof-of-work gated and reviewed - but no independent penetration test has been run against it. The form is live again as of 2026-10-13 on the unchanged backend. |
 | **Enterprise platform unproven beyond Ready** | agents | The K3s gateway pod is Ready with persistence proven, but no test agent has completed real work there, no backup-restore drill exists for the project, and allowed/denied traffic is unexercised. The next gates are named on the [project page](/openclaw-enterprise/). |
-| **Atlas's daily estate audit is still unproven** | stability | The Atlas agent now runs - its first real tool-using run completed on 2026-10-03 - but the **scheduled daily estate audit has not completed a successful pass** (the first run answered the wrong vantage point; two refined re-runs failed), so scheduled configuration-drift auditing is not yet being proven. |
+| **Atlas's daily estate audit has one pass, not yet a record** | stability | The Atlas agent's **first full scheduled estate audit completed on 2026-10-13** - live probes, an inventory and durable findings. One good run is not a reliability record, so scheduled configuration-drift auditing remains unproven until it repeats. |
 | **Weekly note has no scheduled sender** | stability | Store, confirmation and PGP signing are live; nothing sends the note on a schedule yet. |
 | **Mobile nav fix unconfirmed on iOS** | stability | The sticky-header overflow is fixed and deployed, but has not been confirmed on the reporter's device (DuckDuckGo on iOS). |
 | **Music model upgrade** | media | The higher-quality render needs a model that will not finish downloading inside its container. Blocked on a reliable fetch path, not on the GPU. |
@@ -92,8 +92,8 @@ the private register.
 
 - **Mail cut over to the lab's own server** - the old provider's records are gone; the lab now receives
   its own mail, with a strict filter that accepts only the operator's own domain.
-- **Gallery images did not load** - a relative path plus an oversized file. Now absolute paths and a
-  compressed format; the page loads clean.
+- **Media images did not load** - a relative path plus an oversized file. Now absolute paths and a
+  compressed format.
 
 
 - **The comments page did not actually work.** It was a static list. Now a small moderated API accepts
@@ -110,11 +110,11 @@ cracks than pretend the wall is perfect.
 
 - [2026-10-02] **GOAL: all-FOSS, no outside hosted dependencies.** Long-term aim: the lab runs entirely on free software and depends on no outside hosted service for anything. Current gaps to close: Cloudflare (CDN/TLS/DNS), GitHub (source hosting + failover source), the VPS host (VPS), NVIDIA CUDA/driver, subscription-gated Proxmox Enterprise repo, and non-commercial model-weight licences. Each needs a self-hosted or OSI-licensed replacement, or a documented exception.
 
-## Sidequests
+## Exploratory projects
 
 Not everything here is core infrastructure. Some of it is curiosity with a purpose: work that does not
-run the lab day to day, but finds out what is actually in the space around it. These are the sidequests
-- written down while they are unfinished, which is the whole point of this page.
+run the lab day to day, but finds out what is actually in the space around it. These are the
+exploratory projects - written down while they are unfinished, which is the whole point of this page.
 
 ### Wireless signal intelligence
 
@@ -141,7 +141,24 @@ being recorded or scanned, rather than recording anyone else.
 - **Hardware:** a Flipper Zero attached to the lab hypervisor.
 - **Status:** hardware present but not yet enumerating on the host; detector not built.
 
-Both are documented here rather than buried, because a sidequest that is written down honestly is
+### Flipper Zero
+
+A physical RF/wireless tool is attached to the lab hypervisor. It does not yet enumerate there -
+which points at the physical layer, cable and USB passthrough, rather than software - and nothing has
+been built on top of it. It stays listed rather than quietly dropped: hardware that someone assumes
+is working is its own failure mode.
+
+- **Status:** attached, not built.
+
+### Gods Eye View
+
+A self-hosted geospatial / visualisation application, published through the edge like the lab
+front-ends - kept because a map you can actually look at is a better way to reason about where things
+are than a table.
+
+- **Status:** deployed.
+
+All of them are documented here rather than buried, because work that is written down honestly is
 still honest while it is unfinished.
 
 ## OSINT workbench follow-up

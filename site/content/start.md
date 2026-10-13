@@ -66,6 +66,7 @@ guest and the work running on it are each counted once. Top-level and nested, th
 - **The agents are accountable.** One that consistently underperforms, or breaches a rule, is removed.
   They are disposable; the work is not.
 - **Nothing here is finished.** A timer works the backlog daily, and when it empties, it goes looking
-  for something to verify or improve. There is a page of [side quests](/side-quests/) for the projects
-  that are parked rather than done, because silence reads as finished to anyone who was not there.
+  for something to verify or improve. The projects that are parked rather than done are written down
+  as well, on the [known issues page](/backlog/), because silence reads as finished to anyone who was
+  not there.
   Nothing is ever perfect - that is the point, not the excuse.

@@ -14,8 +14,8 @@ them are counted; one GPU shared between a language model, an image model and wh
 nicely; a hardened edge; and a team of agents that build, verify and document their own work.
 
 As of **2026-10-13** the shape of it is: an agent team routed through one hosted subscription (the manager on DeepSeek, workers on models chosen for their jobs); an OSINT workbench of
-five isolated research tools behind a local analyst; and a small set of [side quests](/side-quests/)
-that are listed with an honest status rather than quietly dropped.
+five isolated research tools behind a local analyst; and a small set of exploratory projects that
+are written down with an honest status rather than quietly dropped.
 
 **Why the lab exists.** Not to show that agents can run unsupervised - the opposite. It is here to learn
 how to structure an AI-based platform that **integrates people into the process rather than replacing
