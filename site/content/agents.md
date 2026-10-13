@@ -35,6 +35,12 @@ scheduled worker runs.
 A separate cost-tuned budget agent was **removed on 2026-10-05**: once the manager was the only paid
 identity and everyone else ran free, a second cost-tuned role had no distinct job left to do.
 
+**Where the roster goes next.** A Kubernetes experiment ([OpenClaw Enterprise](/openclaw-enterprise/))
+is testing whether this platform gets a repeatable home. If it proves out, **replacement agents will
+be stood up on the new platform and tested one by one**, and the source fleet retired in batches -
+main, the operator-facing coordinator, remains while replacements earn their place. Nothing has
+migrated yet; the table above is the fleet as it actually runs.
+
 ## Worker access verification — 2026-10-06
 
 The tool grants below were proven on the local worker model in October; on 2026-10-13 the workers moved to the hosted OpenCode Go route, so the current tool-call capability proof sits on the current route and is re-verified in the private progress record.

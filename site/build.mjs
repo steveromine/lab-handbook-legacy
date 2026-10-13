@@ -51,6 +51,8 @@ const STORY = [
   { slug: '/wren/', file: 'wren.md', nav: '/wren/', section: 'Story' },
   { slug: '/guest-access/', file: 'guest-access.md', nav: '/guest-access/', section: 'Story' },
   { slug: '/requests/', file: 'requests.md', nav: '/requests/', section: 'Story' },
+  { slug: '/ask/', file: 'ask.md', nav: '/ask/', section: 'Story' },
+  { slug: '/openclaw-enterprise/', file: 'openclaw-enterprise.md', nav: '/openclaw-enterprise/', section: 'Story' },
   { slug: '/safety/', file: 'safety.md', nav: '/safety/', section: 'Story' },
   { slug: '/constraints/', file: 'constraints.md', nav: '/constraints/', section: 'Story' },
   { slug: '/accessibility/', file: 'accessibility.md', nav: '/accessibility/', section: 'Story' },
@@ -230,6 +232,7 @@ function searchIndex(pages) {
   const json = JSON.stringify(entries);
   // Fail loudly rather than publish an index that cannot be parsed.
   try { JSON.parse(json); } catch (e) { console.error('SEARCH INDEX GATE: generated index is not valid JSON: ' + e.message); process.exit(2); }
+  write('search-index.json', json);
 }
 
 function sitemap(pages) {

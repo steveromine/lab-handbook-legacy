@@ -53,6 +53,15 @@ That incident is why this site is generated from a repository with an automated 
 
 The theme of that day was **verification**: several items that reported success had not actually worked, and several that looked like failures were fine. The [Lessons](/lessons/) page records the specifics.
 
+## Refreshed 2026-10-13 15:30 UTC
+
+The interactive pieces are back, and the Kubernetes experiment has its first honest green label.
+
+| Area | State | What is recorded | What remains unproven |
+|---|---|---|---|
+| **Live site components** | <span class="pill pill-verified">VERIFIED</span> | Static site search, the grounded chatbot ([Ask](/ask/)) and the request form ([Requests](/requests/)) are restored on their original, unchanged backends - the edge routes and services never went away; only the front-end pieces had been retired on 2026-10-06. The request flow keeps its proof-of-work challenge, rate limits and moderation queue; the chatbot stays retrieval-grounded on this site's own pages and refuses rather than guesses. | The backends are the same services that ran before the freeze; no new penetration test is claimed against them. |
+| **OpenClaw Enterprise (K3s experiment)** | <span class="pill pill-configured">CONFIGURED</span> <span class="pill pill-verified">VERIFIED</span> | A small Kubernetes cluster on a new virtual machine runs the official OpenClaw release image, pinned by digest. The gateway pod reports **Ready**, its health checks answer, its state survives a pod restart, and the configured model route is the inexpensive Flash model. The first container-based attempt hit container-runtime limits and was contained - the source fleet was never touched. | **Ready is not production-ready, and nothing has migrated.** No test agent has completed real work there, no backup-restore drill exists for this project, and allowed/denied traffic has not been exercised both ways. See [the project page](/openclaw-enterprise/). |
+
 ## Refreshed 2026-10-13 12:00 UTC
 
 The handbook is live again (frozen 2026-10-06 to 2026-10-12; updates resume from here).

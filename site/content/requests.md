@@ -19,8 +19,9 @@ declined. If it would not help a reasonable person use or understand the lab, it
 
 ## Request something, or just say something
 
-The request form remains retired - the site is static and takes no submissions; this page records how submissions worked while the lab ran them.
+The request form is **live again** (restored 2026-10-13 on its original, unchanged backend - one challenge, one queue, same review).
 
+{{FORM:request}}
 
 You can stay **anonymous** - the name field is optional and nothing else about you is stored. If you
 do give a name, it is published only if your request is approved, and only as you wrote it.

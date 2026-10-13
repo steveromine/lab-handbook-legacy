@@ -8,7 +8,12 @@ hero_lede: 'Every lab has rough edges. These are ours - written down as they hap
 
 ## Agent delivery — 2026-10-13
 
-Open: provider-labelled billing errors and throttling blocked multiple scheduled duties. Reliable delivery and deployment reconciliation remain unproven. See the [daily review](/reviews/).
+Provider-labelled billing errors and throttling blocked multiple scheduled duties this morning; the
+fleet moved to one hosted route the same day, retiring the local-model context limit that had broken
+worker runs for a week. The site's interactive pieces (search, chatbot, request form) are restored,
+and the Kubernetes experiment reached **Ready** - see the [daily review](/reviews/) and the
+[project page](/openclaw-enterprise/). Reliable delivery and deployment reconciliation remain
+unproven.
 
 ## Worker access defects — repaired 2026-10-06
 
@@ -32,8 +37,8 @@ the private register.
 | **Guest-inference revocation untested** | security | The design is written, but the feature is not built and **revocation has never been exercised**. Until it has, the isolation is a plan, not a proven control. |
 | **OSINT container baselines not recorded** | security | Three new OSINT worker containers run outside the recorded image-digest and restart-policy baselines, so the hourly monitor flags them as drift; recording the baselines (or retiring the containers) is the fix. |
 | **Hypervisor root filesystem 80% full** | stability | The hypervisor's own root filesystem is at 80% used - the monitor's warn threshold - and trending up; reclaim space or grow it before it reaches the critical threshold. |
-| **Public request endpoint not independently tested** | security | The single request/answer endpoint (`/api/request`) is rate-limited, proof-of-work gated and reviewed - but no independent penetration test has been run against it. |
-| **Worker jobs failing on a local-model timeout** | stability | Two scheduled worker jobs have failed every attempt for the last four runs with a model idle timeout; the once-a-day worker tier is not reliably completing its daily deliverables. |
+| **Public request endpoint not independently tested** | security | The single request/answer endpoint (`/api/request`) is rate-limited, proof-of-work gated and reviewed - but no independent penetration test has been run against it. The form is live again as of 2026-10-13 on the unchanged backend. |
+| **Enterprise platform unproven beyond Ready** | agents | The K3s gateway pod is Ready with persistence proven, but no test agent has completed real work there, no backup-restore drill exists for the project, and allowed/denied traffic is unexercised. The next gates are named on the [project page](/openclaw-enterprise/). |
 | **Atlas's daily estate audit is still unproven** | stability | The Atlas agent now runs - its first real tool-using run completed on 2026-10-03 - but the **scheduled daily estate audit has not completed a successful pass** (the first run answered the wrong vantage point; two refined re-runs failed), so scheduled configuration-drift auditing is not yet being proven. |
 | **Weekly note has no scheduled sender** | stability | Store, confirmation and PGP signing are live; nothing sends the note on a schedule yet. |
 | **Mobile nav fix unconfirmed on iOS** | stability | The sticky-header overflow is fixed and deployed, but has not been confirmed on the reporter's device (DuckDuckGo on iOS). |
@@ -46,6 +51,12 @@ the private register.
 
 ## Recently fixed
 
+- **The worker tier's week-long failure streak ended.** The local-model context limit that broke
+  every scheduled worker run for seven days was retired when the fleet moved to one hosted route on
+  2026-10-13 (the manager on DeepSeek, workers on models chosen for their jobs).
+- **The site's interactive pieces are back.** Static search, the grounded chatbot and the request
+  form were restored on 2026-10-13 on their original, unchanged backends - only the front-end pieces
+  had been retired in the freeze.
 - **The subscription and comments pages were retired.** Comment and answer folded into the single
   request page: one challenge, one queue, instead of two half-maintained ones. The proof-of-work gate
   and moderation are unchanged.

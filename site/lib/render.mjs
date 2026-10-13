@@ -37,6 +37,7 @@ export const NAV = [
     { href: '/handbook/build-agent-vm/', label: 'The agent VM' }
   ] },
   { label: 'Status', href: '/status/' },
+  { label: 'Ask', href: '/ask/' },
   { label: 'Governance', children: [
     { href: '/governance/', label: 'Governance overview' },
     { href: '/operator/', label: 'The human in the loop' },
@@ -125,14 +126,14 @@ export function tocHtml(headings) {
 
 const REPO_URL = process.env.REPO_URL || 'https://github.com/steveromine/lab-handbook-legacy';
 
-// Retirement notice, operator-requested 2026-10-06. This handbook records a lab that has been
-// decommissioned; the site lives on as a static, read-only record of a moment in time. Rendered at
-// the top of every page so no visitor mistakes the content for a live service.
+// Revival notice, operator-requested 2026-10-13. The handbook froze 2026-10-06 and came back
+// 2026-10-13; the interactive pieces (static search, the grounded chatbot, the request form) are
+// restored on their original, unchanged backends. Rendered at the top of every page.
 const RETIRE_BANNER = [
   '<aside class="notice-banner" role="note">',
-  '<p><strong>Back online.</strong> The handbook sat frozen from 2026-10-06 and is live again from ',
-  '2026-10-13 - still a static site (no chatbot, no request form, no services behind the page), but ',
-  'updated as the lab changes, including the daily image and song.</p>',
+  '<p><strong>Back online - and interactive again.</strong> The handbook sat frozen from 2026-10-06 and is live again from ',
+  '2026-10-13: <a href="/ask/">the grounded chatbot</a>, <a href="/requests/">the request form</a> and site search are ',
+  'restored on their original backends, and the site is updated as the lab changes, including the daily image and song.</p>',
   '</aside>'
 ].join('');
 
@@ -187,6 +188,7 @@ export function layout(opts) {
   parts.push('<a class="brand" href="/"><span class="brand-mark" aria-hidden="true">LH</span><span class="brand-text">' + esc(SITE.title) + '</span></a>');
   parts.push('<button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>');
   parts.push('<nav id="site-nav" class="site-nav" aria-label="Primary"><ul>' + navHtml(opts.navCurrent || url) + '</ul></nav>');
+  parts.push('<button type="button" class="search-open" data-search-open aria-label="Search this site">Search</button>');
   parts.push('<button type="button" class="theme-toggle" data-theme-toggle aria-label="Switch colour theme">Theme</button>');
   parts.push('</div>');
   parts.push('</header>');
@@ -205,6 +207,13 @@ export function layout(opts) {
   parts.push('<p class="fine">Licence: code <a href="https://github.com/steveromine/lab-handbook-legacy/blob/main/LICENSE">MIT</a>; words and media CC BY-SA 4.0 - use it freely, credit me, no warranty. Bundled components keep their own terms; generated media credits its model.</p>');
   parts.push('<p class="fine">Deployed <time datetime="' + new Date().toISOString().slice(0, 10) + '">' + new Date().toISOString().slice(0, 10) + '</time>.</p>');
   parts.push('</div></footer>');
+  parts.push('<dialog id="search-dialog" class="search-dialog" aria-label="Search">');
+  parts.push('<form method="dialog" class="search-form"><label for="q">Search the handbook</label>');
+  parts.push('<input id="q" name="q" type="search" autocomplete="off" placeholder="e.g. MTU, GPU, overlay">');
+  parts.push('<button value="close" class="search-close" aria-label="Close search">Close</button></form>');
+  parts.push('<div id="search-results" class="search-results" role="list"></div>');
+  parts.push('<p class="fine">Search runs entirely in your browser against a static index. Nothing is sent anywhere.</p>');
+  parts.push('</dialog>');
   parts.push('</body></html>');
   return parts.join('\n');
 }

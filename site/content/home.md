@@ -26,6 +26,20 @@ Three agents have found and fixed real faults this way, including a publication 
 silently blocking deploys. See [The team at work](#the-team-at-work), or watch
 [see the agent at work](/demos/).
 
+## The newest chapter: a pause, a revival, and a Kubernetes experiment
+
+The handbook **froze on 2026-10-06** - a deliberate pause, not a decommission - and **came back on
+2026-10-13**. The revival returned the interactive pieces with it: [site search](/), the
+[grounded chatbot](/ask/) that answers only from this documentation and refuses rather than
+guesses, and the [request form](/requests/) - all on their original, unchanged backends.
+
+The same day opened a new experiment, nicknamed **OpenClaw Enterprise**: could a small Kubernetes
+cluster give this platform a repeatable home? The honest answer so far: the gateway pod is **Ready**
+- health checks pass and state survives restarts - but it is **not production-ready** and nothing
+has **migrated**. If it proves out, replacement agents will be stood up and tested there before the
+old fleet is retired in batches. [Follow the experiment](/openclaw-enterprise/) - diagrammed,
+labelled, and updated as it goes.
+
 ## What this is for
 
 Before the machinery, the point. **This lab exists to learn how to structure an AI-based platform that
@@ -106,11 +120,12 @@ model that produced it - credit where it is due, blame nowhere it is not. Full t
 [LICENSE](https://github.com/steveromine/lab-handbook/blob/main/LICENSE). The
 [licence page](/license/) names the split and, honestly, the closed things this lab still leans on.
 
-## About this lab, as of 2026-10-05
+## About this lab, as of 2026-10-13
 
 One person, one hypervisor, one shared GPU, and a small team of agents that now have to earn their
 keep. The estate is **38 running workloads** - thirty-five containers and three virtual machines,
-counting the containers nested inside the guests the same way as the guests themselves.
+counting the containers nested inside the guests the same way as the guests themselves - plus one
+Kubernetes experiment earning its proofs one gate at a time.
 
 Everything here is made in the lab on its own hardware; agents are accountable and disposable;
 and nothing is finished - a timer works the backlog daily, and goes looking for something to verify
