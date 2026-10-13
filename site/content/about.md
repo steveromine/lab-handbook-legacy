@@ -13,8 +13,7 @@ virtual machines**, which between them host **38 running workloads** once the co
 them are counted; one GPU shared between a language model, an image model and whatever else asks
 nicely; a hardened edge; and a team of agents that build, verify and document their own work.
 
-As of **2026-10-05** the shape of it is: an agent team whose only paid model is the manager, with
-every other agent on the lab's own GPU or the operator's Codex subscription; an OSINT workbench of
+As of **2026-10-13** the shape of it is: an agent team routed through one hosted subscription (the manager on DeepSeek, workers on models chosen for their jobs); an OSINT workbench of
 five isolated research tools behind a local analyst; and a small set of [side quests](/side-quests/)
 that are listed with an honest status rather than quietly dropped.
 

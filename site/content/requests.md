@@ -19,7 +19,7 @@ declined. If it would not help a reasonable person use or understand the lab, it
 
 ## Request something, or just say something
 
-The request form has been retired with the lab - this page is kept as a record of how submissions worked.
+The request form remains retired - the site is static and takes no submissions; this page records how submissions worked while the lab ran them.
 
 
 You can stay **anonymous** - the name field is optional and nothing else about you is stored. If you

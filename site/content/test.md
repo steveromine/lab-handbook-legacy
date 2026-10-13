@@ -14,7 +14,7 @@ Press the button. Everything runs **in your browser**; nothing about you is sent
 ## What is tested
 
 - **JavaScript is alive** - the page you are looking at is being enhanced right now.
-- **The API answered** - while the lab ran, the comments and uptime endpoints responded. Both have been retired with it.
+- **The API answered** - while the lab ran, the comments and uptime endpoints responded. Both are retired; the site is static.
 - **Images load** - the site's own generated pictures are reachable.
 - **Navigation works** - the menu elements exist and are wired.
 - **The theme toggles** - the light/dark control responds.

@@ -53,6 +53,16 @@ That incident is why this site is generated from a repository with an automated 
 
 The theme of that day was **verification**: several items that reported success had not actually worked, and several that looked like failures were fine. The [Lessons](/lessons/) page records the specifics.
 
+## Refreshed 2026-10-13 12:00 UTC
+
+The handbook is live again (frozen 2026-10-06 to 2026-10-12; updates resume from here).
+
+| Area | State | What is recorded | What remains unproven |
+|---|---|---|---|
+| **Monitoring** | <span class="pill pill-verified">VERIFIED</span> <span class="pill pill-gap">KNOWN GAP</span> | The hourly read-only monitor now runs **45 deterministic checks**; the 2026-10-13 09:17 UTC run reported seven problems, every one operator-gated or external - a live configuration drift awaiting a decision, an edge SSH-source allowlist gap, a disk-identity false warning (the two NVMe drives swapped device names across a reboot), two orphaned scheduled jobs left by a role retirement in early October, a disabled legacy job at its error breaker, and an unreachable external probe. None is a new host or service fault. | The remaining items are all decision-gated, not newly broken. |
+| **Estate** | <span class="pill pill-verified">VERIFIED</span> | 16 LXC containers and 3 virtual machines, all running; the hard-reboot gap that previously left the GPU guests down is closed (device nodes are created before the guest autostart, with a recovery service as a second layer). The hypervisor's own root filesystem sits at 80% - the flagged growth is stranded backup archives from retired guests, awaiting a prune or grow decision. | A true cold-boot end-to-end is not run in a normal window; the next real reboot confirms the fix, and the monitor catches any regression. |
+| **Worker tier** | <span class="pill pill-verified">VERIFIED</span> <span class="pill pill-gap">KNOWN GAP</span> | On 2026-10-13 the fleet moved to one hosted route (the master on DeepSeek, workers on models chosen for their jobs), which retired the local-model context limit that had broken scheduled worker runs for seven days. The same day, the scheduled image and song jobs were re-created: the daily gallery and music resume. | The hosted route's daily cadence is proven by the schedule itself; the site is updated as the lab changes. |
+
 ## Refreshed 2026-10-05 05:00 UTC
 
 | Area | State | What is recorded | What remains unproven |

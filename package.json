@@ -2,7 +2,7 @@
   "name": "lab-handbook-legacy",
   "private": true,
   "version": "1.0.0",
-  "description": "Static legacy record of the Lab Handbook (retired).",
+  "description": "The Lab Handbook - live again as of 2026-10-13.",
   "engines": { "node": ">=22" },
   "scripts": {
     "build": "node site/build.mjs"

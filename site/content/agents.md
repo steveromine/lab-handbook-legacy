@@ -12,27 +12,32 @@ the main agent, and its role in the chart above is **Manager** - the coordinator
 names: a persona for the writing, a role for the org chart. When this page says "the Manager", it
 means Wren.
 
-**Six agents are configured in total.** Under the cost directive applied 2026-10-04 and tightened on
-2026-10-05, the split is deliberate: the **manager alone keeps the paid cloud route**, and every other
-agent is on a route that costs nothing at the margin - either the lab's **own local GPU model** or the
-operator's **Codex subscription**. Each agent's public name now states the model it actually runs, so a
-name can no longer drift away from the routing behind it.
+**Six agents are configured today**, all routed through one hosted subscription
+(**OpenCode Go**, since 2026-10-13): the manager on DeepSeek, and each worker on a model chosen for
+its job. The names below state the model each identity actually runs.
 
 The roster as configured today:
 
 | Agent id | Name | Route |
 |---|---|---|
-| `main` | **main-deepseek** | paid cloud - the manager, and the only paid agent |
-| `openai-api` | **openai-codex** | Codex subscription |
-| `forge` | **forge-ops-llm** | the lab's own local GPU model |
-| `sentinel` | **sentinel-ops-llm** | the lab's own local GPU model |
-| `atlas` | **atlas-ops-llm** | the lab's own local GPU model |
-| `ledger` | **ledger-ops-llm** | the lab's own local GPU model |
+| `main` | **main-deepseek-v4-pro** | DeepSeek V4 Pro - the manager, on the hosted route |
+| `openai-api` | **openai-qwen3.8-max** | Qwen3.8 Max |
+| `forge` | **forge-kimi-k3** | Kimi K3 - the builder |
+| `sentinel` | **sentinel-kimi-k3** | Kimi K3 - the reviewer |
+| `atlas` | **atlas-deepseek-v4-flash** | DeepSeek V4 Flash - read-only recon |
+| `ledger` | **ledger-deepseek-v4-flash** | DeepSeek V4 Flash - records and docs |
 
+Before 2026-10-13 the split was different: the manager alone kept a paid cloud route and every other
+agent ran on the lab's own local GPU model (or the operator's Codex subscription). The move to the
+hosted route was an operator decision - the master on DeepSeek, per request, and each worker on a
+model suited to its job. It also retired the local-model context limit that had been breaking the
+scheduled worker runs.
 A separate cost-tuned budget agent was **removed on 2026-10-05**: once the manager was the only paid
 identity and everyone else ran free, a second cost-tuned role had no distinct job left to do.
 
 ## Worker access verification — 2026-10-06
+
+The tool grants below were proven on the local worker model in October; on 2026-10-13 the workers moved to the hosted OpenCode Go route, so the current tool-call capability proof sits on the current route and is re-verified in the private progress record.
 
 The manager’s communication roster now includes every active worker and excludes the retired
 budget identity. Workers have role-appropriate recall, web retrieval and child-management tools;
