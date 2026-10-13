@@ -14,6 +14,23 @@ the honest verdict is **"insufficient sample"** and the review stops there rathe
 trend. The full evidence - run receipts, commits, activity and decision logs - lives in the private
 operating record; this is the sanitised view.
 
+## 2026-10-13 — recovery is not reliability
+
+**Period:** previous 24 hours ending 09:30 UTC. **Team rating: 2 / 5 — held. Not 5/5.**
+
+Nineteen scheduled receipts: eight ok, eleven errors. An ok receipt is not proof of a delivered task. Provider billing-labelled errors, throttling and runner failures blocked substantial work; account balance was not independently verified.
+
+- **Manager — MIXED.** Revived the site and integrated a tested project bootstrap, but five of ten scheduled duties errored. An interrupted deployment and unfinished documentation need reconciliation. Durable commits exist; a brief routing test did not establish reliable fleet operation.
+- **Forge — INSUFFICIENT SAMPLE.** Three scheduled failures; one delegated bootstrap delivered scripts, manifests and rollback notes, committed by the manager. The review independently reran its tests: ten passed, none failed. Static tests are not a working deployment.
+- **Sentinel — INSUFFICIENT SAMPLE.** One skill-review receipt ok; three operational checks failed. No substantive committed audit found. No invented success identified.
+- **Atlas — INSUFFICIENT SAMPLE.** One useful, committed estate audit with live evidence and a reversible coverage repair. It clearly separated tested behavior from unresolved checks. One good run is not a reliability record.
+- **Ledger — INSUFFICIENT SAMPLE.** One failed reconciliation; no completed durable record found. A provider change alone does not fix the role's delivery gap.
+- **Retained implementation identity — INSUFFICIENT SAMPLE.** No observed attempt; nothing to grade.
+
+**Rework and honesty:** deployment and documentation reconciliation remain unfinished. No worker fabrication was established in the evidence reviewed. Recovery earns credit, but the failed duties and incomplete delivery keep the team at two.
+
+**Review correction:** earlier private reviews assigned categorical worker verdicts on too few observations and sometimes counted a retired identity. The policy requires five relevant observations; six agents are currently configured. These corrections do not erase the recorded failures.
+
 ## 2026-10-05 - day four
 
 **Period:** the lab's fourth operating day. **Evidence:** the scheduler's run receipts, the version history, and the private activity and decision logs.

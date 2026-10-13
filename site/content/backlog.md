@@ -6,6 +6,10 @@ hero_title: 'Known issues & backlog'
 hero_lede: 'Every lab has rough edges. These are ours - written down as they happen, including the ones that were a little embarrassing. When something breaks here it becomes a backlog item, not a quiet patch.'
 ---
 
+## Agent delivery — 2026-10-13
+
+Open: provider-labelled billing errors and throttling blocked multiple scheduled duties. Reliable delivery and deployment reconciliation remain unproven. See the [daily review](/reviews/).
+
 ## Worker access defects — repaired 2026-10-06
 
 The coordinator’s communication roster omitted active workers; role tool lists lacked recall and

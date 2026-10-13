@@ -157,19 +157,13 @@ That is why **"insufficient sample" is a required answer** - a team that cannot 
 
 ## The rating: honest, and allowed to be low
 
-A team that grades itself needs to publish the bad days too, so the agents are reviewed daily on
-outcome, not activity. All four reviews so far are public on the [agent reviews](/reviews/) page - day one
-(2026-10-02), day two (2026-10-03), day three (2026-10-04) and day four (2026-10-05).
+The latest [daily review](/reviews/) covers the 24 hours ending 2026-10-13 09:30 UTC.
 
-**Rating: 3 / 5 - held, not raised (2026-10-05). Deliberately not 5/5.** The Manager stays
-measurable and performing and produced every durable deliverable this window. The worker tier did not:
-an operator cost directive slowed every periodic job to at most once a day, so each worker role ran
-only once or twice - too few observations to grade - and none of those runs left a durable record at
-all. The estate audit is still unproven for a fourth day, and the reconciliation role is still blocked
-by its own job configuration for a third. The number is held, not raised: one agent produced all the
-durable output, and the reduced sample is largely operator-directed rather than earned. Where a role
-has too little evidence the verdict is **"insufficient sample"**, and the review stops there instead
-of inventing a trend. The score moves when the evidence moves, and not before.
+**Rating: 2 / 5 — held against the latest private review; down from the stale public 3 / 5. Not 5/5.**
+Nineteen scheduled receipts yielded eight ok and eleven errors. Forge delivered a tested bootstrap
+and Atlas a substantive audit, but several operational duties failed and deployment reconciliation
+remains unfinished. An ok receipt is not task completion, and a short route test is not reliability.
+Roles with fewer than five relevant observations receive **insufficient sample**, not invented grades.
 
 ## Agent accountability
 
@@ -184,7 +178,7 @@ made and explained.
 *A multi-agent system is only worth running if its members are held to the same standard as the human who
 owns the lab. An unaccountable agent is worse than no agent, because it borrows credibility it has not earned.*
 
-## Where each role actually stands (2026-10-05)
+## Historical role snapshot (2026-10-05)
 
 A `LIVE` pill means the role exists, has a standing duty and has completed a run on the working model; a `CONFIGURED` pill means the role is scheduled and routable but has not yet run. Either way it does not mean every role has yet proved itself. The honest split, as of this date:
 
