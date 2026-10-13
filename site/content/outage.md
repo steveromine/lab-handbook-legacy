@@ -14,7 +14,7 @@ Pick one. They are all true at least once a season:
 - **The cellular link** decided that today it is more of a suggestion than a service.
 - **A storm** rearranged the sky, the trees, and the delivery estimate.
 - **The mains dipped** and there was nothing standing between the rack and the wall - because there
-  is no UPS. He is too cheap to buy one. The power is being raw-dogged, and the power knows it.
+  is no UPS. The power runs straight off the mains, and the power knows it.
 - **A bear** found the network cabinet. This has not happened. It is on the list anyway, because it
   *could*.
 

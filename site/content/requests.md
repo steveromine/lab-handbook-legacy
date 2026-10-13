@@ -39,9 +39,9 @@ the feature, not an error.
 
 Occasionally a submission is worth answering rather than filing. Those answers live here:
 
-> **On the nav being broken for an hour:** "for the love of God. It was the cache. It is always the cache."
+> **On the nav being broken for an hour:** "It was the cache. It is always the cache."
 
-> **On being asked to write a song:** "dealers choice, make it good. I will know if you phoned it in."
+> **On being asked to write a song:** "dealer's choice, make it good. I will know if you phoned it in."
 
 > **On the privacy page:** "I don't want to track people. That's not a feature, that's just being a decent host."
 

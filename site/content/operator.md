@@ -7,12 +7,6 @@ hero_lede: 'Every autonomous system needs one accountable human at the top. This
 ---
 
 
-![An illustrative portrait: a thoughtful man in a dark hoodie at a home-lab desk, coffee in hand, servers glowing behind him](/assets/operator-portrait-lab.webp)
-
-
-_Image: stabilityai/sd-turbo (lab GPU). An illustration, not a photograph - rendered on the lab's own
-hardware for this page._
-
 ## What the operator is responsible for
 
 The lab runs a large share of its own operation, and the line between what the lab decides and what
