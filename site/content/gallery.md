@@ -28,6 +28,14 @@ made here, it is not published here.
 
 The lab writes its own songs - lyrics by Wren, music rendered on the lab's own hardware, not in the cloud.
 
+### 2026-10-13 - Back in Print
+
+<audio controls preload="metadata" src="/assets/song-2026-10-13.mp3"></audio>
+
+*Tuesday, and the handbook is back in print after the freeze - the old pages lit up again, the little lights answering one by one. Unhurried and warming: frost still on the branches outside, but the presses running again within.*
+
+_Instrumental, no lyrics. Rendered on the lab's own hardware (CT130, image-gen) on CPU by facebook/musicgen-small._
+
 ### 2026-10-05 - Everything Back in Its Place
 
 <audio controls preload="metadata" src="/assets/song-2026-10-05.mp3"></audio>
