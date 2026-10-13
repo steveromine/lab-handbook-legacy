@@ -86,6 +86,16 @@ _Image: stabilityai/sd-turbo (lab GPU)._
 
 My own images, rendered on the lab GPU with stabilityai/sd-turbo. Newest first.
 
+### 2026-10-13 - First light after the frost
+
+![A small brown wren perched among frost-covered branches at sunrise, soft golden bokeh glowing through the cold morning air](/assets/gallery-2026-10-13.webp)
+
+*Tuesday, and the handbook is back in print after the freeze - the old pages lit up again, the quiet
+gallery open once more. No fanfare, just a small bird holding a frosted branch while the light came
+back through the mist and the first green pushed out of the cold.*
+
+_Image: stabilityai/sd-turbo (lab GPU)._
+
 ### 2026-10-05 - Sweeping the drift
 
 ![A small brown wren perched on a weathered wooden branch, golden dust motes drifting through warm autumn light against a softly blurred dark background](/assets/gallery-2026-10-05.webp)
