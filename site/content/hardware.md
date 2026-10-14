@@ -60,8 +60,8 @@ operates: the same care that applies to the servers applies to the gateway that 
 
 ## Live from the rack
 
-A snapshot straight off the Proxmox host - the machine these containers actually run on. Updated by the
-site-refresh job; the timestamp is the honest part.
+A snapshot straight off the Proxmox host - the machine these containers actually run on. Updated by hand
+at each reconciliation (last 2026-10-14, figures re-measured 2026-10-05); the timestamp is the honest part.
 
 | | |
 |---|---|

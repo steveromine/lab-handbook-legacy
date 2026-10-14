@@ -28,10 +28,12 @@ The gateway and three Kubernetes core-service pods are Running/Ready, the persis
 Bound, and the loopback health endpoint responds. The previous pod-recreation persistence test
 remains a dated proof, not a new restore test.
 
-Three delivery gaps are now explicit: **private overlay access still needs sign-in**, the weekly
-backup job protects the superseded container rather than the replacement VM, and the replacement
-VM has **automatic boot disabled**. No backup archive or snapshot for it was found. Do not depend
-on the experiment returning after a host reboot or recovering from data loss yet.
+Three delivery gaps were explicit at the last reconciliation: **private overlay access still
+needs sign-in**, the replacement VM has **automatic boot disabled**, and its backups had no
+coverage. Coverage is now half-closed: later on 2026-10-14 the replacement VM was **added to the
+weekly backup job** (first archive due 2026-10-18), but **no backup archive or snapshot of it
+exists yet**. Do not depend on the experiment returning after a host reboot or recovering from
+data loss yet.
 
 The next milestone is still a disposable agent completing real model, tool and memory work,
 followed by traffic-boundary tests and an isolated restore. No replacement agent has been accepted.
