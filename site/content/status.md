@@ -31,7 +31,7 @@ undated claims and earlier snapshots below.
 | **Inventory** | 20 running hypervisor guests: 16 containers and 4 virtual machines. One superseded container is retained stopped. | Nested containers were not recounted; this is a guest count, not a new total-workload figure. |
 | **Website** | Publication is active; search, documentation chatbot and request form were restored on 2026-10-13. The later professional pass removed the gallery and side-quest routes, the revival banner and portrait. | This update preserves those newer choices. Build and publication checks do not certify the whole lab. |
 
-The deterministic monitor has **45 checks** in its committed definition. The latest operational
+The monitor's committed definition contains **45 deterministic checks**. The latest operational
 review also records aging backups, provider failures and other standing warnings; no all-clear
 is implied. See [Enterprise](/openclaw-enterprise/), [agents](/agents/) and [known issues](/backlog/).
 

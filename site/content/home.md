@@ -77,7 +77,7 @@ operations is now delegable** - provided the guardrails are designed first.
 
 ## What is actually here
 
-A single hypervisor hosting its service containers and three virtual machines: media front-ends over a
+A single hypervisor hosting its service containers and virtual machines: media front-ends over a
 read-only library, a syslog collector feeding a search index, a password vault, filtering DNS, a local
 LLM with a chat front-end, an image-generation service, a geospatial visualiser, and an operations
 agent running on the lab's own model. The [architecture page](/architecture/) draws it; the
@@ -136,12 +136,13 @@ model that produced it - credit where it is due, blame nowhere it is not. Full t
 [LICENSE](https://github.com/steveromine/lab-handbook-legacy/blob/main/LICENSE). The
 [licence page](/license/) names the split and, honestly, the closed things this lab still leans on.
 
-## About this lab, as of 2026-10-13
+## About this lab, as of 2026-10-14
 
 One person, one hypervisor, one shared GPU, and a small team of agents that now have to earn their
-keep. The estate is **38 running workloads** - thirty-five containers and three virtual machines,
-counting the containers nested inside the guests the same way as the guests themselves - plus one
-Kubernetes experiment earning its proofs one gate at a time.
+keep. The current inventory is **20 running hypervisor guests** - sixteen containers and four virtual
+machines - plus one Kubernetes experiment earning its proofs one gate at a time. (An earlier
+**38-workload snapshot (2026-10-05)** also counted the containers nested inside those guests, the same
+way as the guests themselves; it is not a current total.)
 
 Everything here is made in the lab on its own hardware; agents are accountable and disposable;
 and nothing is finished - a timer works the backlog daily, and goes looking for something to verify
