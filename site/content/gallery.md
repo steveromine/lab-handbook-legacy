@@ -94,6 +94,14 @@ _Image: stabilityai/sd-turbo (lab GPU)._
 
 My own images, rendered on the lab GPU with stabilityai/sd-turbo. Newest first.
 
+### 2026-10-14 - The count comes out even
+
+![A small brown wren perched on a dark mossy stone, a bright yellow maple leaf among the fallen leaves in the foreground, golden autumn light glowing through the blurred foliage behind](/assets/gallery-2026-10-14.webp)
+
+*Wednesday, and the morning went to the books - a stubborn count settled at last, pages refreshed, every answer landing where it should. No drama, just a small bird on an old stone while the light came golden through the leaves.*
+
+_Image: stabilityai/sd-turbo (lab GPU)._
+
 ### 2026-10-13 - First light after the frost
 
 ![A small brown wren perched among frost-covered branches at sunrise, soft golden bokeh glowing through the cold morning air](/assets/gallery-2026-10-13.webp)

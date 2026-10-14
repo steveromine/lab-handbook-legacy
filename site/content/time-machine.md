@@ -3,7 +3,7 @@ title: 'Time machine'
 description: 'Every change to this site, from the first commit to now - the lab's own history, as far back as it goes.'
 eyebrow: 'As far back as it goes'
 hero_title: 'The time machine'
-hero_lede: 'Nothing here is hidden behind a curtain. This is the full history of the handbook - 198 recorded changes from 2026-10-01 to 2026-10-14 - so you can watch the thinking change, mistakes and all.'
+hero_lede: 'Nothing here is hidden behind a curtain. This is the full history of the handbook - 199 recorded changes from 2026-10-01 to 2026-10-14 - so you can watch the thinking change, mistakes and all.'
 ---
 
 Every commit to this site, newest first. The point is not that the lab got everything right; it is
@@ -11,6 +11,7 @@ that you can see **how it changed** - including the places it changed its mind.
 
 ## 2026-10-14
 
+- `827ce19` — docs: accuracy pass 2026-10-14 - enterprise backup coverage half-closed (VM151 now in lab-weekly, first archive due 2026-10-18, none exists yet); hardware rack block is hand-updated, not refreshed by a job
 - `6f58e55` — site-refresh: /status/ refreshed from the 2026-10-14 05:31 UTC monitor run; time machine refreshed
 - `ec827d5` — docs: reconcile the /status/ monitor-count phrase and the homepage estate figures; refresh the time machine
 - `40295c0` — docs: reconcile current deployment, recovery gaps and source roster
