@@ -10,7 +10,7 @@ facts: true
 > **Scope.** One person's lab, published in the open: a working experiment, not a product. It exists
 > to show how far today's tools reach - and it is honest about what is proved and what is not.
 
-## Where it stands, as of 2026-10-13
+## Where it stands, as of 2026-10-14
 
 - **Proven in the record:** agents finding real faults and fixing them with before/after evidence; a
   publication pipeline that fails closed rather than shipping a leak; a backup restored to an isolated
@@ -20,6 +20,11 @@ facts: true
   them for a week; a repeat estate audit before a single pass counts as a record.
 - **Not claimed:** production readiness, high availability, or that every service is healthy. The
   [status page](/status/) carries the full ledger, gaps included.
+
+The latest check confirms a Ready Enterprise gateway, but also finds unfinished private access,
+backup coverage and automatic boot for its replacement VM. Seven source identities now include
+Herald, responsible for web development and marketing. No source agent has migrated.
+[Read the measured checkpoint](/status/).
 
 ## The result, first
 

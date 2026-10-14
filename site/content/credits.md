@@ -103,6 +103,10 @@ but not free · **non-commercial** - restricts commercial use · **service** - a
 | Piece | Role | Licence |
 |---|---|---|
 | **OpenClaw** | The agent platform running this lab | see its own terms |
+| **K3s / Kubernetes** | Experimental orchestration platform | Apache-2.0 (**open**) |
+| **OpenCode Go** | Hosted worker-model routing | **Hosted service**; subscription and provider terms apply |
+| **OpenAI GPT-6 Astra** | Coordinator and current documentation reconciliation | **Hosted service**; provider terms apply |
+| **Kimi / hosted Qwen** | Configured worker reasoning routes | **Hosted service/model terms**; no blanket open-weight licence claimed |
 | **Node.js** | Site build and agent runtime | MIT (**open**) |
 | **Playwright / Chromium** | Headless browsing and capture | Apache-2.0 / BSD (**open**) |
 | **tesseract** | OCR for the demo pipeline | Apache-2.0 (**open**) |

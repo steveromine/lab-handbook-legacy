@@ -124,7 +124,7 @@ function heroHtml(meta) {
 
 const FACTS = [
   ['Hypervisor', '1', 'One physical Proxmox VE host. A deliberate single point of failure.'],
-  ['Running workloads', '38', 'Thirty-five containers and three virtual machines - sixteen container guests plus the nineteen containers nested inside them, each counted once (reconciled 2026-10-13).'],
+  ['Running guests', '20', 'Sixteen container guests and four virtual machines (verified 2026-10-14). Nested containers are not included; one superseded container is retained stopped.'],
   ['GPU', '8 GB', 'One consumer card, shared three ways on purpose.'],
   ['GPU workloads', '3', 'Resident LLM (~5 GB), streaming image model, bursty media transcode.'],
   ['Image generation', '1-4 steps', 'A distilled few-step model; ~1.5-2.5 s per image alongside the LLM.'],
@@ -493,6 +493,12 @@ function titleGate() {
 // shrink the page when history is unavailable or shallower (e.g. a depth-1 CI checkout), in which
 // case we keep the committed page rather than failing the build.
 function syncHistory() {
+  // Release builds can render the reviewed, committed history snapshot unchanged.
+  // Refresh once before committing; opt out only for the final reproducible build.
+  if (process.env.SITE_HISTORY_REFRESH === '0') {
+    console.log('History: using committed snapshot (SITE_HISTORY_REFRESH=0)');
+    return;
+  }
   try {
     const out = execFileSync(process.execPath, [path.join(ROOT, 'scripts', 'gen-history.mjs'), ROOT], { encoding: 'utf8' });
     process.stdout.write(out);

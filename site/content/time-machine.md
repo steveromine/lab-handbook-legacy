@@ -3,7 +3,7 @@ title: 'Time machine'
 description: 'Every change to this site, from the first commit to now - the lab's own history, as far back as it goes.'
 eyebrow: 'As far back as it goes'
 hero_title: 'The time machine'
-hero_lede: 'Nothing here is hidden behind a curtain. This is the full history of the handbook - 194 recorded changes from 2026-10-01 to 2026-10-13 - so you can watch the thinking change, mistakes and all.'
+hero_lede: 'Nothing here is hidden behind a curtain. This is the full history of the handbook - 195 recorded changes from 2026-10-01 to 2026-10-13 - so you can watch the thinking change, mistakes and all.'
 ---
 
 Every commit to this site, newest first. The point is not that the lab got everything right; it is
@@ -11,6 +11,7 @@ that you can see **how it changed** - including the places it changed its mind.
 
 ## 2026-10-13
 
+- `4f5697a` — site: tone redaction in the generated history display (one coarse phrase softened; git history unchanged)
 - `ebd35c9` — site: professional pass 2 - revival banner and operator portrait removed; comment quotes and wording censored
 - `f76b86a` — site: professional pass 1 - remove gallery/side-quests surfaces, rework operator page, sharpen front page
 - `d2e3cff` — revive: restore live components (search, chatbot, request form) + the Kubernetes story

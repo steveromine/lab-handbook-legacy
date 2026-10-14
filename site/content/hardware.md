@@ -6,6 +6,14 @@ hero_title: 'The actual hardware'
 hero_lede: 'No rack, no data center. One ordinary desktop from 2020, a single consumer GPU, and a five-dollar VPS at the edge. Here is exactly what it is, and how old it is.'
 ---
 
+## Inventory note — 2026-10-14
+
+The latest count is **20 running hypervisor guests: 16 container guests and 4 virtual machines**.
+The additional VM hosts the Kubernetes experiment; the earlier container candidate is retained
+stopped. Older workload figures below describe the 2026-10-05 snapshot including nested containers,
+not a fresh workload census. [Current status and remaining recovery gaps](/status/).
+
+
 ## The one box
 
 Everything in this lab runs on a single 2020 desktop - a **Lenovo Legion T7 34IMZ5** (machine type

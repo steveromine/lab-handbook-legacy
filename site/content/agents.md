@@ -12,28 +12,24 @@ the main agent, and its role in the chart above is **Manager** - the coordinator
 names: a persona for the writing, a role for the org chart. When this page says "the Manager", it
 means Wren.
 
-**Six agents are configured today**, all routed through one hosted subscription
-(**OpenCode Go**, since 2026-10-13): the manager on DeepSeek, and each worker on a model chosen for
-its job. The names below state the model each identity actually runs.
+**Seven agent identities are configured as of 2026-10-14.** These are the source fleet,
+not agents migrated into Kubernetes. The table names configured routes, not guaranteed provider
+availability or a particular session's override. No automatic cross-provider fallback is configured.
 
-The roster as configured today:
-
-| Agent id | Name | Route |
+| Identity | Responsibility | Configured route |
 |---|---|---|
-| `main` | **main-deepseek-v4-pro** | DeepSeek V4 Pro - the manager, on the hosted route |
-| `openai-api` | **openai-qwen3.8-max** | Qwen3.8 Max |
-| `forge` | **forge-kimi-k3** | Kimi K3 - the builder |
-| `sentinel` | **sentinel-kimi-k3** | Kimi K3 - the reviewer |
-| `atlas` | **atlas-deepseek-v4-flash** | DeepSeek V4 Flash - read-only recon |
-| `ledger` | **ledger-deepseek-v4-flash** | DeepSeek V4 Flash - records and docs |
+| `main` | Coordination, risk decisions and final verification | OpenAI GPT-6 Astra |
+| `openai-api` | Retained model identity | OpenCode Go / Qwen3.8 Max |
+| `forge` | Build and implementation | OpenCode Go / Kimi K3 |
+| `sentinel` | Review and audit | OpenCode Go / Kimi K3 |
+| `atlas` | Inventory and reconnaissance | OpenCode Go / DeepSeek V4 Flash |
+| `ledger` | Records and documentation | OpenCode Go / DeepSeek V4 Flash |
+| `herald` | Website development and truthful marketing | OpenCode Go / DeepSeek V4 Flash |
 
-Before 2026-10-13 the split was different: the manager alone kept a paid cloud route and every other
-agent ran on the lab's own local GPU model (or the operator's Codex subscription). The move to the
-hosted route was an operator decision - the master on DeepSeek, per request, and each worker on a
-model suited to its job. It also retired the local-model context limit that had been breaking the
-scheduled worker runs.
-A separate cost-tuned budget agent was **removed on 2026-10-05**: once the manager was the only paid
-identity and everyone else ran free, a second cost-tuned role had no distinct job left to do.
+The local-model context limit was the earlier worker failure. Moving routes changed that constraint,
+but did not prove reliability: the latest recorded review still reports hosted-provider billing and
+rate-limit errors. Successful individual runs and Herald's published site revisions are evidence of
+specific work, not of uninterrupted service. The retired budget identity remains outside this roster.
 
 **Where the roster goes next.** A Kubernetes experiment ([OpenClaw Enterprise](/openclaw-enterprise/))
 is testing whether this platform gets a repeatable home. If it proves out, **replacement agents will
@@ -52,7 +48,7 @@ and inventory roles retain explicit file-write denials. Their shell access means
 policy boundary, not technical isolation. Parent-only tools remain unavailable to subagents.
 
 Live testing found that the previous local coder model returned text resembling tool calls without
-executing them. The local workers now use the already-installed **Qwen3.5 9B** model, which produced
+executing them. At that 2026-10-06 checkpoint, the local workers used the already-installed **Qwen3.5 9B** model, which produced
 an actual file-read receipt. The local server gives each request its full context window and queues
 concurrent requests. No paid fallback, new credentials, or broader network exposure was added.
 Configured access and successful tool execution are checked separately; a launch alone is not proof.
@@ -86,7 +82,7 @@ The Manager reports to the operator and to no one else. **Sentinel's audit findi
 
 The **Manager** is the coordinator: it takes a task, decomposes it, picks a model and tools, verifies the outcome and reports. Forge, Sentinel, Atlas and Ledger now exist as configured agents with scheduled duties - builds and improvements, adversarial audits, reconnaissance and the records. All five roles have now completed at least one run; **Atlas first ran on 2026-10-03**, on the lab's own local model - but its scheduled daily estate audit closed only one full pass, on 2026-10-13, so that goal is still called out as unproven below.
 
-The honest caveat: the worker roles do not run on the frontier-class model the routing table describes - they run on the lab's own local model, with the manager alone on the paid cloud route. The frontier split is the target, not the present. "Live" here means an agent has an identity, a job and a schedule (and, for Atlas, has completed a run) - not that it is a different class of model.
+The current configured routes are in the dated roster above. “Live” labels describe role identities and recorded runs, not guaranteed provider availability. Herald adds a dedicated website role alongside the five original core duties.
 
 > **Why publish a chart for a team that has only just started running?** Because building a team without one is how you end up with five agents and no idea which is responsible. The chart is the specification the build was held to - and the running record of how far each role has actually got.
 
@@ -116,7 +112,7 @@ Work is routed by **risk and cost**, not by availability:
 | 3 | High volume? | Yes: cheap, fast model |
 | 4 | Otherwise | The lab's own local model |
 
-The operating roster that implements this today - with one deliberate simplification: every worker role runs on the lab's own local model and only the manager keeps the paid cloud route, so the "model class" column names the *intended* split rather than the present one:
+The following model-class table is a routing design, not the current provider roster. Use the dated configured-route table above for the present split:
 
 | Role | Model class | Used for |
 |---|---|---|

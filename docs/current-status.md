@@ -1,5 +1,20 @@
 # Current status and known gaps
 
+## Current checkpoint — 2026-10-14
+
+Focused live checks confirm the Kubernetes experiment has a Ready OpenClaw gateway, three
+healthy core-service pods and a Bound persistent volume. It is not production-ready: private
+overlay sign-in is unfinished, the replacement VM is absent from weekly backup coverage,
+no archive/snapshot for it was found, and automatic boot is disabled. No source agent migrated.
+The source fleet has seven configured identities, including a website/marketing role. Main uses
+OpenAI GPT-6 Astra; other routes use OpenCode Go. Hosted-provider errors still affect workers.
+The current guest count is 16 running containers + 4 VMs; nested workloads were not recounted.
+The website is active and its restored interactive features and professional redesign are preserved.
+
+See [the project notebook](https://lab.steveromine.com/openclaw-enterprise/) and
+[the current public status](https://lab.steveromine.com/status/). The 2026-10-01 record below is historical.
+
+
 Reconciled on 2026-10-01 from private activity records and service runbooks. This is a
 documentation reconciliation, not a fresh live audit of every service.
 

@@ -1,5 +1,14 @@
 # The Lab Handbook
 
+## Current checkpoint — 2026-10-14
+
+The Kubernetes experiment now has a Ready gateway, not a production-ready platform. Private
+access, replacement-VM backup/boot coverage, a full test agent and recovery/isolation proofs
+remain unfinished. No source agent has migrated. Seven source identities include the dedicated
+web/marketing role. The latest count is **20 running hypervisor guests**; older nested-workload
+counts below are dated snapshots, not a live counter. See [current status](docs/current-status.md).
+
+
 A guided tour of a small self-hosted lab: **what it does, how the pieces fit together, how it got
 here, and what is actually running right now.**
 

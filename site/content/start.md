@@ -5,6 +5,14 @@ hero_title: 'Where to start'
 hero_lede: 'The same lab, described for four different readers. Pick the one that matches why you are here.'
 ---
 
+## Inventory note — 2026-10-14
+
+The latest count is **20 running hypervisor guests: 16 container guests and 4 virtual machines**.
+The additional VM hosts the Kubernetes experiment; the earlier container candidate is retained
+stopped. Older workload figures below describe the 2026-10-05 snapshot including nested containers,
+not a fresh workload census. [Current status and remaining recovery gaps](/status/).
+
+
 ## If you are not technical
 
 Start with **[Explain it like I am 5](/handbook/eli5/)**. No jargon: one box, many little rooms, one front door - and the part that matters most, which is that **machines build and check the work**, while a person decides what should exist and makes the risky calls.

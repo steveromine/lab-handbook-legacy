@@ -17,7 +17,25 @@ hero_lede: 'A documentation reconciliation, not a fresh live audit of every serv
 
 > "Configured" and "verified" are deliberately different words on this page. Several of the lab's most expensive mistakes were configurations that validated perfectly and did nothing - so a green check gets the weaker label until something has actually been exercised.
 
-## The reconciliation
+## Verified checkpoint — 2026-10-14
+
+This is a focused reconciliation, not a new audit of every service. It supersedes conflicting
+undated claims and earlier snapshots below.
+
+| Area | Verified or recorded result | Still open |
+|---|---|---|
+| **Enterprise experiment** | Fresh checks: Kubernetes node Ready; three core service pods and the OpenClaw gateway all Running/Ready; persistent volume Bound; loopback health endpoint answers. The earlier pod-recreation persistence test is recorded separately. | Ready is not production-ready. No complete test-agent, isolation or isolated-restore proof, and no source-agent migration. |
+| **Private access** | The established SSH/loopback access path remains available. | The new host is not signed into the private overlay; no HTTPS serving configuration is active there. A staged watcher is not delivered access. |
+| **Recovery and boot** | The failed container candidate is retained stopped; the replacement VM is running. | The weekly job still names the superseded container, not the replacement VM. No replacement-VM archive or snapshot was found; automatic boot is disabled. A persistent volume is not a backup. |
+| **Source agents** | Seven configured identities: coordinator, builder, reviewer, inventory, records, retained model identity and the new web/marketing role. Main uses OpenAI GPT-6 Astra; other routes use OpenCode Go. | Hosted-provider billing/rate-limit errors still affect scheduled workers in the latest recorded review. One-off success is not reliable daily delivery. |
+| **Inventory** | 20 running hypervisor guests: 16 containers and 4 virtual machines. One superseded container is retained stopped. | Nested containers were not recounted; this is a guest count, not a new total-workload figure. |
+| **Website** | Publication is active; search, documentation chatbot and request form were restored on 2026-10-13. The later professional pass removed the gallery and side-quest routes, the revival banner and portrait. | This update preserves those newer choices. Build and publication checks do not certify the whole lab. |
+
+The deterministic monitor has **45 checks** in its committed definition. The latest operational
+review also records aging backups, provider failures and other standing warnings; no all-clear
+is implied. See [Enterprise](/openclaw-enterprise/), [agents](/agents/) and [known issues](/backlog/).
+
+## Earlier baseline — historical reconciliation
 
 | Area | State | What is recorded | What remains unproven |
 |---|---|---|---|
@@ -62,15 +80,19 @@ The interactive pieces are back, and the Kubernetes experiment has its first hon
 | **Live site components** | <span class="pill pill-verified">VERIFIED</span> | Static site search, the grounded chatbot ([Ask](/ask/)) and the request form ([Requests](/requests/)) are restored on their original, unchanged backends - the edge routes and services never went away; only the front-end pieces had been retired on 2026-10-06. The request flow keeps its proof-of-work challenge, rate limits and moderation queue; the chatbot stays retrieval-grounded on this site's own pages and refuses rather than guesses. | The backends are the same services that ran before the freeze; no new penetration test is claimed against them. |
 | **OpenClaw Enterprise (K3s experiment)** | <span class="pill pill-configured">CONFIGURED</span> <span class="pill pill-verified">VERIFIED</span> | A small Kubernetes cluster on a new virtual machine runs the official OpenClaw release image, pinned by digest. The gateway pod reports **Ready**, its health checks answer, its state survives a pod restart, and the configured model route is the inexpensive Flash model. The first container-based attempt hit container-runtime limits and was contained - the source fleet was never touched. | **Ready is not production-ready, and nothing has migrated.** No test agent has completed real work there, no backup-restore drill exists for this project, and allowed/denied traffic has not been exercised both ways. See [the project page](/openclaw-enterprise/). |
 
-## Refreshed 2026-10-13 12:00 UTC
+## Revival record — corrected 2026-10-14
+
+The original section was incorrectly stamped 12:00 UTC before that time had occurred; its
+monitor sample was from 2026-10-12, not 2026-10-13. A schedule alone cannot prove delivery.
+The following corrected summary preserves the event without its premature success claims.
 
 The handbook is live again (frozen 2026-10-06 to 2026-10-12; updates resume from here).
 
 | Area | State | What is recorded | What remains unproven |
 |---|---|---|---|
-| **Monitoring** | <span class="pill pill-verified">VERIFIED</span> <span class="pill pill-gap">KNOWN GAP</span> | The hourly read-only monitor now runs **45 deterministic checks**; the 2026-10-13 09:17 UTC run reported seven problems, every one operator-gated or external - a live configuration drift awaiting a decision, an edge SSH-source allowlist gap, a disk-identity false warning (the two NVMe drives swapped device names across a reboot), two orphaned scheduled jobs left by a role retirement in early October, a disabled legacy job at its error breaker, and an unreachable external probe. None is a new host or service fault. | The remaining items are all decision-gated, not newly broken. |
+| **Monitoring at revival** | <span class="pill pill-gap">KNOWN GAP</span> | The 2026-10-12 09:17 UTC monitor recorded seven problems. A later diagnosis attributed the disk-identity warning to enumeration order, not different disks. | These were dated observations, not a fresh whole-estate all-clear; later reviews and the current checkpoint supersede them. |
 | **Estate** | <span class="pill pill-verified">VERIFIED</span> | 16 LXC containers and 3 virtual machines, all running; the hard-reboot gap that previously left the GPU guests down is closed (device nodes are created before the guest autostart, with a recovery service as a second layer). The hypervisor's own root filesystem sits at 80% - the flagged growth is stranded backup archives from retired guests, awaiting a prune or grow decision. | A true cold-boot end-to-end is not run in a normal window; the next real reboot confirms the fix, and the monitor catches any regression. |
-| **Worker tier** | <span class="pill pill-verified">VERIFIED</span> <span class="pill pill-gap">KNOWN GAP</span> | On 2026-10-13 the fleet moved to one hosted route (the master on DeepSeek, workers on models chosen for their jobs), which retired the local-model context limit that had broken scheduled worker runs for seven days. The same day, the scheduled daily image and song jobs were re-created and are running again. | The hosted route's daily cadence is proven by the schedule itself; the site is updated as the lab changes. |
+| **Worker tier at revival** | <span class="pill pill-configured">CONFIGURED</span> <span class="pill pill-gap">KNOWN GAP</span> | Hosted routes and daily publication schedules were configured; image and song runs subsequently completed on 2026-10-13 before the gallery was retired by the professional redesign. | Scheduling is not delivery. Current provider errors and actual receipts, not a model change alone, determine worker reliability. |
 
 ## Refreshed 2026-10-05 05:00 UTC
 

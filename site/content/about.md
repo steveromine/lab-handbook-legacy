@@ -3,19 +3,21 @@ title: 'About'
 description: 'What this lab is, who Wren is, how it runs, and how honest it is trying to be.'
 eyebrow: 'About'
 hero_title: 'About this lab'
-hero_lede: 'One person, one hypervisor, one shared GPU, and a small team of agents that have to earn their keep. Thirty-eight running workloads - containers and virtual machines, top-level and nested - documented honestly, including the parts that are not working.'
+hero_lede: 'One person, one hypervisor, one shared GPU, and a small team of agents that have to earn their keep. Twenty running hypervisor guests at the latest check, with unfinished work documented rather than hidden.'
 ---
 
 ## What this is
 
-The Lab Handbook documents one person's home lab: a hypervisor running **16 LXC containers and 3
-virtual machines**, which between them host **38 running workloads** once the containers nested inside
-them are counted; one GPU shared between a language model, an image model and whatever else asks
-nicely; a hardened edge; and a team of agents that build, verify and document their own work.
+The Lab Handbook documents a working infrastructure experiment: one hypervisor, one shared GPU,
+an edge for selected services, and agents that build, verify and record their work. The latest
+check, **2026-10-14**, counted **16 running container guests and 4 running virtual machines**.
+The earlier **38-workload snapshot (2026-10-05)** also counted nested containers; it is not a
+current inventory. No new nested-workload total is claimed.
 
-As of **2026-10-13** the shape of it is: an agent team routed through one hosted subscription (the manager on DeepSeek, workers on models chosen for their jobs); an OSINT workbench of
-five isolated research tools behind a local analyst; and a small set of exploratory projects that
-are written down with an honest status rather than quietly dropped.
+Seven source agent identities now include a dedicated website and marketing role. The coordinator
+uses OpenAI GPT-6 Astra; the other configured routes use OpenCode Go. The Kubernetes experiment
+has a Ready gateway, but access, backup/boot coverage and end-to-end validation are unfinished.
+See [current status](/status/) and [the agent roster](/agents/).
 
 **Why the lab exists.** Not to show that agents can run unsupervised - the opposite. It is here to learn
 how to structure an AI-based platform that **integrates people into the process rather than replacing
@@ -46,14 +48,13 @@ be automated. There is a page about him: [the human in the loop](/operator/).
   here.
 - **Agents are accountable.** One that consistently underperforms, or breaches a rule, is removed. They
   are disposable; the work is not.
-- **A timer works the backlog every fifteen minutes.** When it empties, it goes looking for something to
+- **Scheduled work and operator-directed runs maintain the backlog.** When it empties, it goes looking for something to
   verify or improve. Nothing is ever perfect - that is the point, not the excuse.
 - **Nothing is taken on faith.** Where a claim appears here, there is a command, a status code or a hash
   behind it. Where a gap remains, it is written down as a gap - the [service map](/service-map/) marks
   whole rows *untested* rather than pretending, and the [evaluation bench](/handbook/eval-bench/)
   publishes no scores at all until a baseline exists.
-- **Media is made here; reasoning has a route.** Every image and song is rendered on this machine's own
-  GPU. The agents' own reasoning runs on a configured model route, and that route is stated plainly
+- **Media is made here; reasoning has a route.** Published lab-generated images and songs retain their own model credits; GPU and CPU generation are distinguished. The agents' own reasoning runs on a configured model route, and that route is stated plainly
   rather than dressed up as "local only" where it is not.
 
 ## Licence and honesty

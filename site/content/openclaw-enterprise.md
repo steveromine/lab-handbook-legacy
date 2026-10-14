@@ -12,7 +12,7 @@ Explore whether a small Kubernetes deployment can give OpenClaw a **repeatable h
 recovery and isolation tests before any existing work moves. **Enterprise is a project nickname**, not
 a claim of vendor support, a separate product, high availability, or production readiness.
 
-The original agent fleet remains in place and unchanged. This experiment has not replaced it.
+The source fleet remains in place; it has not been migrated or replaced. Its routing and roster can evolve independently of this experiment.
 
 ## Three words that are not interchangeable
 
@@ -21,6 +21,20 @@ The original agent fleet remains in place and unchanged. This experiment has not
 | **Ready** | The gateway pod reports Ready, its health checks answer, and its state survives a pod restart. | **Yes - this far, and no further.** |
 | **Production-ready** | Backup/restore drilled for this project, isolation exercised both ways, a test agent completing real work. | No - none of that is demonstrated yet. |
 | **Migrated** | Existing agents actually moved onto the new platform. | No - nothing has moved. |
+
+## Fresh verification — 2026-10-14
+
+The gateway and three Kubernetes core-service pods are Running/Ready, the persistent volume is
+Bound, and the loopback health endpoint responds. The previous pod-recreation persistence test
+remains a dated proof, not a new restore test.
+
+Three delivery gaps are now explicit: **private overlay access still needs sign-in**, the weekly
+backup job protects the superseded container rather than the replacement VM, and the replacement
+VM has **automatic boot disabled**. No backup archive or snapshot for it was found. Do not depend
+on the experiment returning after a host reboot or recovering from data loss yet.
+
+The next milestone is still a disposable agent completing real model, tool and memory work,
+followed by traffic-boundary tests and an isolated restore. No replacement agent has been accepted.
 
 ## How the lab got here
 

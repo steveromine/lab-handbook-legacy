@@ -1,5 +1,16 @@
 # Interaction log (sanitised)
 
+## 2026-10-14 — Recovering an interrupted documentation task
+
+The operator asked for the stopped session's results to be reconciled and published. Provider
+rate limiting interrupted that reconciliation too. On return, the agent checked later work rather
+than replaying its old draft: the Kubernetes gateway had since become Ready and the website had
+received a professional revision. Those newer choices were preserved. Fresh verification also
+found unfinished private access and missing backup/boot coverage for the replacement VM. The
+published status distinguishes that running gateway from production readiness or a completed
+migration. No infrastructure repair was silently bundled into the documentation update.
+
+
 A running, sanitised record of how the operator and the agent work together - requests, decisions,
 mistakes and how they were corrected. Kept so the collaboration itself is inspectable, not just its
 outputs.
