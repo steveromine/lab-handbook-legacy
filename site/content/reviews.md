@@ -14,6 +14,22 @@ the honest verdict is **"insufficient sample"** and the review stops there rathe
 trend. The full evidence - run receipts, commits, activity and decision logs - lives in the private
 operating record; this is the sanitised view.
 
+## 2026-10-14 — useful specialists, unreliable delivery
+
+**Period:** previous 24 hours ending 09:30 UTC. **Seven identities. Team rating: 2 / 5 — held. Not 5/5.**
+
+Twenty-five scheduled receipts: thirteen ok, eleven errors, one skipped. Retries count separately; these are not unique tasks. Current errors: throttling, timeouts, runner failures and runtime supersession—not new billing failures. An ok receipt is not completion.
+
+- **Manager — MIXED.** Recovered a deployment and integrated verified specialist/site work. Ten scheduled errors, repeatedly corrected mobile navigation and duplicate decision identifiers needing repair make this uneven. Recovery acceptance remains unfinished. Git history is extensive, but not every task is done.
+- **Forge — INSUFFICIENT SAMPLE.** One scheduled timeout and one committed repository-safety fix. Delegated media and site revival have committed artifacts and parent verification. No demonstrated builder-caused redo or fabrication.
+- **Sentinel — INSUFFICIENT SAMPLE.** Three completed duties: operational repairs, moderation persistence and documentation accuracy. Durable commits support delivery. Explicitly called an unreachable target unverified instead of inventing health.
+- **Atlas — INSUFFICIENT SAMPLE.** Committed estate audit replaced an inconclusive probe with a real data transfer and corrected the enforcement explanation. Honest rework. Delivered a receipts audit; an empty skill-collection check earns no engineering credit.
+- **Ledger — INSUFFICIENT SAMPLE.** Corrected stale counts and state; the manager committed and published the handoff. Honestly stated it could not commit or deploy itself. Useful, but dependent on an integrator.
+- **Retained implementation identity — INSUFFICIENT SAMPLE.** One bounded skill review with a reasoned no-change result. No Git change warranted; no broader operational achievement claimed.
+- **Herald — INSUFFICIENT SAMPLE.** One committed professional site pass, independently checked by the manager. Later requested tone changes are not evidence of failure against the original brief. One good debut is not a track record.
+
+**Judgement:** useful specialist recovery, but eleven errors, real rework and unfinished acceptance keep the team at two. No intentional fabrication established in this sample; not a blanket honesty certificate. Fewer than five substantive observations do not justify categorical worker grades.
+
 ## 2026-10-13 — recovery is not reliability
 
 **Period:** previous 24 hours ending 09:30 UTC. **Team rating: 2 / 5 — held. Not 5/5.**

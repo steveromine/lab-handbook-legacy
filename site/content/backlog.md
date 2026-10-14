@@ -10,9 +10,9 @@ hero_lede: 'Every lab has rough edges. These are ours - written down as they hap
 
 | Issue | State and required evidence |
 |---|---|
-| **Enterprise recovery/boot coverage** | Replacement VM is Ready but absent from the weekly backup list; no archive/snapshot found and automatic boot is disabled. Protect the correct guest, verify a backup and isolated restore, and prove boot recovery before production reliance. |
+| **Enterprise recovery/boot coverage** | Replacement VM is Ready and now included in the weekly backup list, but no archive/snapshot is yet verified and automatic boot is disabled. Verify a backup and isolated restore, and prove boot recovery before production reliance. |
 | **Enterprise private access** | Private-overlay sign-in is incomplete and no HTTPS serving configuration is active. Verify an authenticated client path after setup; staged configuration is not access. |
-| **Hosted-worker reliability** | The latest review records billing/rate-limit errors. A successful individual job or enabled timer is not proof of reliable scheduled delivery. |
+| **Hosted-worker reliability** | The review ending 2026-10-14 09:30 UTC records eleven errors in twenty-five scheduled receipts: throttling, timeouts, runner failures and runtime supersession. Specialist delivery improved; reliable scheduled delivery remains unproven. |
 
 The gateway itself is running. Test-agent, isolation and replacement-agent validation remain
 open; no source fleet migration is claimed. [Measured status](/status/).

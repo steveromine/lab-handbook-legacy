@@ -159,12 +159,13 @@ That is why **"insufficient sample" is a required answer** - a team that cannot 
 
 ## The rating: honest, and allowed to be low
 
-The latest [daily review](/reviews/) covers the 24 hours ending 2026-10-13 09:30 UTC.
+The latest [daily review](/reviews/) covers the 24 hours ending 2026-10-14 09:30 UTC.
 
-**Rating: 2 / 5 — held against the latest private review; down from the stale public 3 / 5. Not 5/5.**
-Nineteen scheduled receipts yielded eight ok and eleven errors. Forge delivered a tested bootstrap
-and Atlas a substantive audit, but several operational duties failed and deployment reconciliation
-remains unfinished. An ok receipt is not task completion, and a short route test is not reliability.
+**Rating: 2 / 5 — held. Not 5/5; the team has not earned it.**
+Seven identities produced twenty-five scheduled receipts: thirteen ok, eleven errors and one skipped.
+Retries count separately. Specialists delivered committed repairs, audits and site work, but the
+manager remains an unreliable scheduled bottleneck. Navigation rework, decision-record corrections
+and unfinished recovery acceptance block a raise. An ok receipt is not completion.
 Roles with fewer than five relevant observations receive **insufficient sample**, not invented grades.
 
 ## Agent accountability
