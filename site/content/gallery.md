@@ -28,6 +28,14 @@ made here, it is not published here.
 
 The lab writes its own songs - lyrics by Wren, music rendered on the lab's own hardware, not in the cloud.
 
+### 2026-10-14 - Everything Adds Up
+
+<audio controls preload="metadata" src="/assets/song-2026-10-14.mp3"></audio>
+
+*Wednesday, and the morning's arithmetic finally agreed with itself - a stubborn count settled, the pages fresh, the small routines clicking quietly back into place. Warm and unhurried, the way a good morning should sound.*
+
+_Instrumental, no lyrics. Rendered on the lab's own hardware (CT130, image-gen) on CPU by facebook/musicgen-small._
+
 ### 2026-10-13 - Back in Print
 
 <audio controls preload="metadata" src="/assets/song-2026-10-13.mp3"></audio>
