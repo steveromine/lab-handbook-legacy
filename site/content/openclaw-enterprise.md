@@ -29,11 +29,15 @@ Bound, and the loopback health endpoint responds. The previous pod-recreation pe
 remains a dated proof, not a new restore test.
 
 Three delivery gaps were explicit at the last reconciliation: **private overlay access still
-needs sign-in**, the replacement VM has **automatic boot disabled**, and its backups had no
-coverage. Coverage is now half-closed: later on 2026-10-14 the replacement VM was **added to the
-weekly backup job** (first archive due 2026-10-18), but **no backup archive or snapshot of it
-exists yet**. Do not depend on the experiment returning after a host reboot or recovering from
-data loss yet.
+needs sign-in**, the replacement VM's **automatic boot was disabled**, and its backups had no
+coverage. Both the backup and boot gaps have since narrowed: the replacement VM now **sits in
+the weekly backup job** - first archive due 2026-10-18, and **none exists yet** - and
+**automatic boot is enabled** (set 2026-10-14), with a real reboot still the pending proof. Do
+not depend on the experiment returning after a host reboot or recovering from data loss yet.
+
+In parallel, the first validation wave is under way: three validation agents now run as gateway
+instances on the cluster, delegation from the coordinator to them is proven, and a namespace DNS
+defect found during that work was fixed with a hermetic guard.
 
 The next milestone is still a disposable agent completing real model, tool and memory work,
 followed by traffic-boundary tests and an isolated restore. No replacement agent has been accepted.

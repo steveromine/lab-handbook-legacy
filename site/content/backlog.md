@@ -10,7 +10,7 @@ hero_lede: 'Every lab has rough edges. These are ours - written down as they hap
 
 | Issue | State and required evidence |
 |---|---|
-| **Enterprise recovery/boot coverage** | Replacement VM is Ready and now included in the weekly backup list, but no archive/snapshot is yet verified and automatic boot is disabled. Verify a backup and isolated restore, and prove boot recovery before production reliance. |
+| **Enterprise recovery/boot coverage** | Replacement VM is Ready, sits in the weekly backup list (first archive due 2026-10-18) and has automatic boot enabled since 2026-10-14 - but no archive, restore or reboot proof exists yet. Verify a backup and isolated restore, and prove boot recovery before production reliance. |
 | **Enterprise private access** | Private-overlay sign-in is incomplete and no HTTPS serving configuration is active. Verify an authenticated client path after setup; staged configuration is not access. |
 | **Hosted-worker reliability** | The review ending 2026-10-14 09:30 UTC records eleven errors in twenty-five scheduled receipts: throttling, timeouts, runner failures and runtime supersession. Specialist delivery improved; reliable scheduled delivery remains unproven. |
 

@@ -22,7 +22,7 @@ facts: true
   [status page](/status/) carries the full ledger, gaps included.
 
 The latest check confirms a Ready Enterprise gateway, but also finds unfinished private access,
-backup coverage and automatic boot for its replacement VM. Seven source identities now include
+backup coverage and boot recovery for its replacement VM. Seven source identities now include
 Herald, responsible for web development and marketing. No source agent has migrated.
 [Read the measured checkpoint](/status/).
 
