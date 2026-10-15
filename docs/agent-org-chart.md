@@ -2,8 +2,9 @@
 
 Who exists, who is planned, what each one is for, and how they behave.
 
-> **An org chart drawn before the team exists is a specification, not a description.** One of the
-> five roles below is live; the rest are designed and not yet built. It is published here because
+> **An org chart drawn before the team exists is a specification, not a description.** All five
+> roles below are now live (reconciled 2026-10-15; a dedicated website role was added later). It was
+> first published here because
 > the design is the interesting part - and because building a team without one is how you end up
 > with four agents and no idea which one is responsible.
 

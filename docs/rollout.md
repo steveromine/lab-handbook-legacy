@@ -1,9 +1,11 @@
 # Phased rollout
 
-Current direction: the configured coordinator and six worker identities use one economical
-DeepSeek API route, without automatic cross-provider fallback. Agent roles and verification
-responsibilities remain distinct. Existing sessions require separate routing checks.
-Configuration alone is not proof of completed work; runtime tests remain a release gate.
+Current direction (reconciled 2026-10-15): the coordinator uses OpenAI GPT-6 Astra and the six
+worker identities use hosted OpenCode Go routes - Kimi K3 for forge and sentinel, DeepSeek V4
+Flash for atlas, ledger and herald, Qwen3.8 Max for the retained identity - without automatic
+cross-provider fallback. Agent roles and verification responsibilities remain distinct. Existing
+sessions require separate routing checks. Configuration alone is not proof of completed work;
+runtime tests remain a release gate.
 
 Latest verification (2026-10-02): all seven identities passed fresh text and tool-call
 probes on DeepSeek without fallback. See [routing verification](deepseek-routing.md) for

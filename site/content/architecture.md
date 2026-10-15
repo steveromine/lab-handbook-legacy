@@ -19,12 +19,12 @@ Everything runs on **one physical hypervisor**. That is a deliberate trade: a si
 |---|---|
 | Hypervisor | One Proxmox VE host; the only machine with a GPU |
 | Containers | Most services, for single-process work: cheap, fast to clone |
-| Virtual machines | Three, for guests that want a real kernel: agent host, storage, media automation |
+| Virtual machines | Four, for guests that want a real kernel: agent host, storage, media automation, and the Kubernetes-experiment VM |
 | Storage | Guest disks on a thin-provisioned pool; media on its own guest, exported read-only |
 
 ### Why containers for most things
 
-Most services are Linux containers: cheap, fast to clone, and a natural fit for a single-process service. Virtual machines are reserved for the three guests that want a real kernel of their own - the agent control host, the storage server, and the media automation host.
+Most services are Linux containers: cheap, fast to clone, and a natural fit for a single-process service. Virtual machines are reserved for the guests that want a real kernel of their own - the agent control host, the storage server, the media automation host, and the Kubernetes-experiment VM added 2026-10-13.
 
 ## Three zones
 

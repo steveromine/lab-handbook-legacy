@@ -225,9 +225,11 @@ The last line matters as much as the first: the platform is expected to say what
 left alone, including the gaps it knows about.
 ## Current routing override
 
-Six of the seven configured coordinator/worker identities run on DeepSeek-only routing, without
-automatic provider fallback. The seventh, **Atlas**, was moved onto the lab's own local model on
-2026-10-03; that local route is now a real selection, not only the "local offline" fallback
-described below. The tiered-model diagrams and descriptions below otherwise describe the target
-design, not current routing policy. See [rollout](rollout.md) for runtime verification gates and
-sequencing.
+Reconciled 2026-10-15: the seven configured identities run mixed hosted routes, without
+automatic provider fallback. **main** (the coordinator) uses OpenAI GPT-6 Astra; **forge** and
+**sentinel** use Kimi K3 on the OpenCode Go route; **atlas**, **ledger** and **herald** use
+DeepSeek V4 Flash on the same route; the retained **openai-api** identity uses Qwen3.8 Max.
+No identity runs on the lab's own local model at present - the local model remains the floor
+described below, not a current agent route. The tiered-model diagrams and descriptions below
+otherwise describe the target design, not current routing policy. See [rollout](rollout.md)
+for runtime verification gates and sequencing.

@@ -43,8 +43,8 @@ permanently.
 
 - **Edge:** a small VPS (this public site and the TLS termination). Cheap, disposable, the only
   thing with a public address.
-- **Agent host:** a VM on the same box - 4 vCPU, 15 GiB RAM, 48 GiB disk - running the agents that
-  write this handbook.
+- **Agent host:** a VM on the same box - 4 vCPU (6 configured for the next power-cycle), 20 GiB RAM,
+  100 GB disk - running the agents that write this handbook.
 
 ## The honest summary
 

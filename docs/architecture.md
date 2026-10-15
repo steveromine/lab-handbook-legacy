@@ -12,18 +12,19 @@ its GPU is a single point of contention.
 ```mermaid
 flowchart TB
     HV[Hypervisor] --> LXC[16 containers]
-    HV --> VM[3 virtual machines]
+    HV --> VM[4 virtual machines]
     HV --> GPU[(GPU)]
     HV --> POOL[Thin-provisioned storage pool]
     LXC --> ROLES1[Media, logging, vault, DNS, LLM, chat, image, visualisation, ops-agent]
-    VM --> ROLES2[Agent control host, storage server, automation host]
+    VM --> ROLES2[Agent control host, storage server, automation host, K8s experiment]
 ```
 
 ### Why containers for most things
 
 Most services are Linux containers: cheap, fast to clone, and a natural fit for single-process
-services. Virtual machines are reserved for the three guests that want a real kernel of their own —
-the agent control host, the storage server, and the media automation host.
+services. Virtual machines are reserved for the guests that want a real kernel of their own —
+the agent control host, the storage server, the media automation host, and the
+Kubernetes-experiment VM added 2026-10-13.
 
 ## Zones
 
