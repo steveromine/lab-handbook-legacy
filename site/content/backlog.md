@@ -6,6 +6,10 @@ hero_title: 'Known issues & backlog'
 hero_lede: 'Every lab has rough edges. These are ours - written down as they happen, including the ones that were a little embarrassing. When something breaks here it becomes a backlog item, not a quiet patch.'
 ---
 
+## Monitoring note — 2026-10-15
+
+The morning site refresh ran late while its host was busy; the run reported success but produced none of its expected output, so completion was re-verified rather than assumed. The refresh completed later the same morning, and this revision is its output; the reporting gap is recorded for follow-up. One notification provider again rejected the hourly digest under its own local mail policy (the standing outbound-mail limitation); the alternate provider accepted it. The public site remained reachable throughout.
+
 ## Current checkpoint — 2026-10-14
 
 | Issue | State and required evidence |

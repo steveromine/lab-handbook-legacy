@@ -71,6 +71,16 @@ That incident is why this site is generated from a repository with an automated 
 
 The theme of that day was **verification**: several items that reported success had not actually worked, and several that looked like failures were fine. The [Lessons](/lessons/) page records the specifics.
 
+## Refreshed 2026-10-15 05:17 UTC
+
+A steady-state refresh: the monitor's latest run exercised all 45 checks; it reported six items, every one previously recorded and none new.
+
+| Area | State | What is recorded | What remains unproven |
+|---|---|---|---|
+| **Monitoring** | <span class="pill pill-verified">VERIFIED</span> <span class="pill pill-gap">KNOWN GAP</span> | The hourly read-only monitor's latest run (2026-10-15 05:17 UTC) exercised all **45 checks** and reports **six items** - every one previously recorded: an aging backup window (the next weekly backup run is due 2026-10-18), a staged configuration drift awaiting an operator decision, two edge-access notes on the management source, and two scheduled-job items (a disabled job since retired by a maintenance pass; a late-running refresh that completed the same morning). | A run with no new problems is not a whole-estate all-clear; every item above is internal, previously recorded, and tracked. |
+| **Estate** | <span class="pill pill-verified">VERIFIED</span> | All intended guests are running - 16 containers and 4 virtual machines - and the tracked guests' listening surfaces match their recorded baseline (16 guests, 38 sockets). | Counts are a snapshot, not a workload total; containers nested inside the guests are not recounted in this refresh. |
+| **Published site** | <span class="pill pill-verified">VERIFIED</span> | Re-checked after the refresh deploy: the build passes the identity scan and every baseline page and asset answers on the canonical origin - including the page you are reading. | The check reads the served bytes; it cannot see what a future edit might introduce until the next refresh. |
+
 ## Refreshed 2026-10-14 05:31 UTC
 
 A steady-state refresh: the monitor's latest run exercised all 45 checks with no new problems.

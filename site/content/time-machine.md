@@ -3,11 +3,15 @@ title: 'Time machine'
 description: 'Every change to this site, from the first commit to now - the lab's own history, as far back as it goes.'
 eyebrow: 'As far back as it goes'
 hero_title: 'The time machine'
-hero_lede: 'Nothing here is hidden behind a curtain. This is the full history of the handbook - 203 recorded changes from 2026-10-01 to 2026-10-14 - so you can watch the thinking change, mistakes and all.'
+hero_lede: 'Nothing here is hidden behind a curtain. This is the full history of the handbook - 204 recorded changes from 2026-10-01 to 2026-10-15 - so you can watch the thinking change, mistakes and all.'
 ---
 
 Every commit to this site, newest first. The point is not that the lab got everything right; it is
 that you can see **how it changed** - including the places it changed its mind.
+
+## 2026-10-15
+
+- `935b979` — docs: enterprise recovery/boot reconciliation - automatic boot enabled 2026-10-14 (reboot proof pending); weekly backup list inclusion (first archive due 2026-10-18); live guest count; first validation wave noted
 
 ## 2026-10-14
 
