@@ -8,7 +8,7 @@ hero_lede: 'Every lab has rough edges. These are ours - written down as they hap
 
 ## Monitoring note — 2026-10-15
 
-The morning site refresh ran late while its host was busy; the run reported success but produced none of its expected output, so completion was re-verified rather than assumed. The refresh completed later the same morning, and this revision is its output; the reporting gap is recorded for follow-up. One notification provider again rejected the hourly digest under its own local mail policy (the standing outbound-mail limitation); the alternate provider accepted it. The public site remained reachable throughout.
+The morning site refresh ran late while its host was busy; the run reported success but produced none of its expected output, so completion was re-verified rather than assumed. The replacement pushed a revision but timed out at deployment dry-runs. The daily review publication carries that pushed revision forward; separate unpublished edits and validation-report integration remain outstanding. The reporting and follow-through gaps are recorded for follow-up. One notification provider again rejected the hourly digest under its own local mail policy (the standing outbound-mail limitation); the alternate provider accepted it. The public site remained reachable throughout.
 
 ## Current checkpoint — 2026-10-14
 

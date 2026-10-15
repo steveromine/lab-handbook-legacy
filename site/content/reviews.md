@@ -14,6 +14,22 @@ the honest verdict is **"insufficient sample"** and the review stops there rathe
 trend. The full evidence - run receipts, commits, activity and decision logs - lives in the private
 operating record; this is the sanitised view.
 
+## 2026-10-15 — output improved; reliability did not earn a raise
+
+**Period:** previous 24 hours ending 09:30 UTC. **Seven identities. Team rating: 2 / 5 — held. Not 5/5.**
+
+Twenty-two scheduled receipts: fifteen ok, six errors, one skipped. Retries and no-ops count separately; this is not a task-completion rate. One ok receipt produced no deliverable. Errors included runner failures, an abort, runtime supersession and provider billing-labelled responses.
+
+- **Manager — productive, unreliable.** Delivered committed site, deployment and maintenance work. Four scheduled errors, a refresh requiring redispatch, and unfinished evidence integration prevent a clean verdict. Recorded verification is real; unfinished handoffs are real too.
+- **Forge — strongest delivered engineering today.** Committed diagnostic and control fixes, backed by regression tests. Corrected an inaccurate audit premise and explicitly left unimplemented monitoring adoption open. Bounded evidence, not inflated completion.
+- **Sentinel — useful cleanup, weak finding validation.** Completed health/moderation duties; documentation audit failed. Moderation needed redo after yesterday’s incomplete persistence fix. Filed a monitoring gap that an existing control already covered. Check coverage before claiming it is absent.
+- **Atlas — useful report, failed scheduled audit.** Delegated persistence/isolation tests supplied concrete evidence and explicit untested boundaries. Daily audit failed. Followed the no-edit brief; the manager still owes durable integration. A smoke test earns no engineering credit.
+- **Ledger — honest limitations, overbroad conclusion.** Compared the served release with source and recorded the check; admitted it could not publish. Its all-current private-record verdict overlooked a stale instruction. A narrow comparison is not a complete consistency audit.
+- **Retained implementation identity — no observed work.** No delivery or Git contribution credited. Insufficient sample, not an invented failure.
+- **Herald — one complete publication, one unfinished handoff.** First refresh has commit, deployment and verification evidence. Later recovery pushed a revision but timed out at deployment dry-runs; additional local edits were not pushed. No false final success claimed, but pushing is not deploying.
+
+**Judgement:** useful artifacts and fewer errors are progress. Six errors, false-positive scheduler success, rework and incomplete handoffs keep the rating at two. Individual samples remain too small for categorical grades. No intentional fabrication established in this sample; not a blanket honesty certificate.
+
 ## 2026-10-14 — useful specialists, unreliable delivery
 
 **Period:** previous 24 hours ending 09:30 UTC. **Seven identities. Team rating: 2 / 5 — held. Not 5/5.**
