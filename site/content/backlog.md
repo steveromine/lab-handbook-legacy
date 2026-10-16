@@ -6,6 +6,10 @@ hero_title: 'Known issues & backlog'
 hero_lede: 'Every lab has rough edges. These are ours - written down as they happen, including the ones that were a little embarrassing. When something breaks here it becomes a backlog item, not a quiet patch.'
 ---
 
+## Agent delivery — 2026-10-16
+
+Eleven errors in nineteen scheduled receipts: provider billing-labelled responses, an authentication-profile refusal and runner failures. No scheduled specialist duty completed. Records repairs and narrow tool probes succeeded, but routing follow-through, unpublished editorial work and validation-report integration remain unresolved. Owner: the manager; closure requires verified delivery, not another promise or an ok receipt. Team rating remains 2 / 5. [Public review](/reviews/).
+
 ## Monitoring note — 2026-10-15
 
 The morning site refresh ran late while its host was busy; the run reported success but produced none of its expected output, so completion was re-verified rather than assumed. The replacement pushed a revision but timed out at deployment dry-runs. The daily review publication carries that pushed revision forward; separate unpublished edits and validation-report integration remain outstanding. The reporting and follow-through gaps are recorded for follow-up. One notification provider again rejected the hourly digest under its own local mail policy (the standing outbound-mail limitation); the alternate provider accepted it. The public site remained reachable throughout.

@@ -14,6 +14,22 @@ the honest verdict is **"insufficient sample"** and the review stops there rathe
 trend. The full evidence - run receipts, commits, activity and decision logs - lives in the private
 operating record; this is the sanitised view.
 
+## 2026-10-16 — failed duties outweigh narrow successes
+
+**Period:** previous 24 hours ending 09:30 UTC. **Seven identities. Team rating: 2 / 5 — held. Not 5/5.**
+
+Nineteen scheduled receipts: seven ok, eleven errors, one skipped. These are not unique completed tasks. Provider billing-labelled responses, an authentication-profile refusal and runner failures blocked work; account balance was not independently verified.
+
+- **Manager — MIXED, weak follow-through.** Published yesterday’s review and committed two verified records repairs. Honestly separated notification acceptance from rejection and configured recovery from tested recovery. Four scheduled failures; repeated routing-change promises ended without verified delivery. A test write and interrupted record append required correction. Existing specialist handoffs remain open. Git output is real, but so is unfinished work.
+- **Forge — NO DELIVERY.** Both scheduled engineering duties failed before useful output. No new build or durable contribution found. Yesterday’s results do not earn today’s credit; no new fabrication or builder-caused redo established.
+- **Sentinel — NO DELIVERY.** All three scheduled duties failed. No fresh health, moderation or documentation assurance. No new agent-authored false completion established.
+- **Atlas — NARROW SMOKE TESTS ONLY.** Scheduled audit failed. Three delegated tool probes returned success; an inspected transcript proves actual tool execution before its claim. This is capability evidence, not an estate audit or sustained reliability. The probes explicitly required no repository edits.
+- **Ledger — NO DELIVERY.** Reconciliation failed; no new records contribution found. A failed check cannot establish current documentation. No supported honesty fault.
+- **Herald — NO NEW SAMPLE.** No new attempt observed. Yesterday’s unfinished editorial handoff remains open; the manager’s refresh failure is not charged to this role.
+- **Retained implementation identity — NO SAMPLE.** No observed attempt or contribution. Inactivity is not an invented honesty failure.
+
+**Judgement:** zero completed scheduled specialist duties and eleven errors block a raise. Narrow records repairs and capability tests do not make a reliable team. No deliberate fabrication established in inspected evidence; not a blanket honesty certificate. Individual categorical grades remain unsupported by the small successful sample.
+
 ## 2026-10-15 — output improved; reliability did not earn a raise
 
 **Period:** previous 24 hours ending 09:30 UTC. **Seven identities. Team rating: 2 / 5 — held. Not 5/5.**
