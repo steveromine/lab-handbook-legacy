@@ -6,6 +6,10 @@ hero_title: 'Known issues & backlog'
 hero_lede: 'Every lab has rough edges. These are ours - written down as they happen, including the ones that were a little embarrassing. When something breaks here it becomes a backlog item, not a quiet patch.'
 ---
 
+## Agent delivery — 2026-10-17
+
+Eleven errors in eighteen scheduled receipts; no scheduled specialist duty completed. A tested diagnostic correction landed, but routing follow-through, unpublished editorial work, validation-report integration and monitoring adoption remain open. Owner: the manager. Closure requires verified delivery, not a promise or an ok receipt. Team rating stays 2 / 5. [Public review](/reviews/).
+
 ## Agent delivery — 2026-10-16
 
 Eleven errors in nineteen scheduled receipts: provider billing-labelled responses, an authentication-profile refusal and runner failures. No scheduled specialist duty completed. Records repairs and narrow tool probes succeeded, but routing follow-through, unpublished editorial work and validation-report integration remain unresolved. Owner: the manager; closure requires verified delivery, not another promise or an ok receipt. Team rating remains 2 / 5. [Public review](/reviews/).
