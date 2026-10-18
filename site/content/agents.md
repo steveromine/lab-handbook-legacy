@@ -159,15 +159,15 @@ That is why **"insufficient sample" is a required answer** - a team that cannot 
 
 ## The rating: honest, and allowed to be low
 
-The latest [daily review](/reviews/) covers the 24 hours ending 2026-10-17 09:30 UTC.
+The latest [daily review](/reviews/) covers the 24 hours ending 2026-10-18 09:30 UTC.
 
 **Rating: 2 / 5 — held. Not 5/5; the team has not earned it.**
-Seven identities produced eighteen scheduled receipts: six ok, eleven errors and one skipped.
-Receipts are not unique completed tasks. A committed, tested diagnostic repair is useful, but
-no scheduled specialist duty completed. Four manager-run failures, unresolved routing delivery
-and old integration handoffs block a raise. No intentional fabrication was established in inspected
-evidence; this is not a blanket honesty certificate. Roles with too little successful evidence
-receive **insufficient sample**, not invented grades.
+Seven identities produced nineteen scheduled receipts: six ok, twelve errors and one skipped.
+Receipts are not unique completed tasks. A committed, independently checked lossless records
+cleanup is useful, but no scheduled specialist duty completed. Four manager-run failures,
+unfulfilled routing follow-through and old integration handoffs block a raise. No intentional
+fabrication was established in inspected evidence; this is not a blanket honesty certificate.
+Roles with too little successful evidence receive **insufficient sample**, not invented grades.
 
 ## Agent accountability
 

@@ -3,11 +3,15 @@ title: 'Time machine'
 description: 'Every change to this site, from the first commit to now - the lab's own history, as far back as it goes.'
 eyebrow: 'As far back as it goes'
 hero_title: 'The time machine'
-hero_lede: 'Nothing here is hidden behind a curtain. This is the full history of the handbook - 207 recorded changes from 2026-10-01 to 2026-10-16 - so you can watch the thinking change, mistakes and all.'
+hero_lede: 'Nothing here is hidden behind a curtain. This is the full history of the handbook - 208 recorded changes from 2026-10-01 to 2026-10-17 - so you can watch the thinking change, mistakes and all.'
 ---
 
 Every commit to this site, newest first. The point is not that the lab got everything right; it is
 that you can see **how it changed** - including the places it changed its mind.
+
+## 2026-10-17
+
+- `74c742c` — reviews: measured failures and bounded repair evidence
 
 ## 2026-10-16
 
