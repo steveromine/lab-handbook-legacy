@@ -5,7 +5,7 @@
 Focused live checks confirm the Kubernetes experiment has a Ready OpenClaw gateway, three
 healthy core-service pods and a Bound persistent volume. It is not production-ready: private
 overlay sign-in is unfinished; the replacement VM now sits in the weekly backup job (first
-archive due 2026-10-18 - none exists yet) and automatic boot is enabled (set 2026-10-14), but
+archive written 2026-10-18; restore unproved) and automatic boot is enabled (set 2026-10-14), but
 neither recovery path has been proved by a real event. No source agent migrated.
 The source fleet has seven configured identities, including a website/marketing role. Main uses
 OpenAI GPT-6 Astra; other routes use OpenCode Go. Hosted-provider errors still affect workers.

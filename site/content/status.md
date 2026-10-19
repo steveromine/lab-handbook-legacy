@@ -26,12 +26,12 @@ undated claims and earlier snapshots below.
 |---|---|---|
 | **Enterprise experiment** | Fresh checks: Kubernetes node Ready; three core service pods and the OpenClaw gateway all Running/Ready; persistent volume Bound; loopback health endpoint answers. The earlier pod-recreation persistence test is recorded separately. | Ready is not production-ready. No complete test-agent, isolation or isolated-restore proof, and no source-agent migration. |
 | **Private access** | The established SSH/loopback access path remains available. | The new host is not signed into the private overlay; no HTTPS serving configuration is active there. A staged watcher is not delivered access. |
-| **Recovery and boot** | The failed container candidate is retained stopped; the replacement VM is running. | The weekly job now includes the replacement VM - first archive due 2026-10-18, and none exists yet - and automatic boot was enabled on 2026-10-14; no real reboot has proved it yet. A persistent volume is not a backup. |
+| **Recovery and boot** | The failed container candidate is retained stopped; the replacement VM is running. | The weekly job now includes the replacement VM - the first archive was written on 2026-10-18 and passed an integrity check, but no restore or application acceptance has been proved - and automatic boot was enabled on 2026-10-14; no real reboot has proved it yet. A persistent volume is not a backup. |
 | **Source agents** | Seven configured identities: coordinator, builder, reviewer, inventory, records, retained model identity and the new web/marketing role. Main uses OpenAI GPT-6 Astra; other routes use OpenCode Go. | Hosted-provider billing/rate-limit errors still affect scheduled workers in the latest recorded review. One-off success is not reliable daily delivery. |
 | **Inventory** | 20 running hypervisor guests: 16 containers and 4 virtual machines. One superseded container is retained stopped. | Nested containers were not recounted; this is a guest count, not a new total-workload figure. |
 | **Website** | Publication is active; search, documentation chatbot and request form were restored on 2026-10-13. The later professional pass removed the gallery and side-quest routes, the revival banner and portrait. | This update preserves those newer choices. Build and publication checks do not certify the whole lab. |
 
-The monitor's committed definition contains **45 deterministic checks**. The latest operational
+The monitor's committed definition contains **46 deterministic checks** (a proof-of-concept segmentation-isolation check was adopted on 2026-10-19). The latest operational
 review also records aging backups, provider failures and other standing warnings; no all-clear
 is implied. See [Enterprise](/openclaw-enterprise/), [agents](/agents/) and [known issues](/backlog/).
 

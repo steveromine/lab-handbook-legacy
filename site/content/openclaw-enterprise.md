@@ -31,7 +31,7 @@ remains a dated proof, not a new restore test.
 Three delivery gaps were explicit at the last reconciliation: **private overlay access still
 needs sign-in**, the replacement VM's **automatic boot was disabled**, and its backups had no
 coverage. Both the backup and boot gaps have since narrowed: the replacement VM now **sits in
-the weekly backup job** - first archive due 2026-10-18, and **none exists yet** - and
+the weekly backup job** - the first archive was written 2026-10-18 and its compression integrity verified, though an isolated restore is still unproved - and
 **automatic boot is enabled** (set 2026-10-14), with a real reboot still the pending proof. Do
 not depend on the experiment returning after a host reboot or recovering from data loss yet.
 
