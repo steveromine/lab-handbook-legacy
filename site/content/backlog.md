@@ -6,6 +6,10 @@ hero_title: 'Known issues & backlog'
 hero_lede: 'Every lab has rough edges. These are ours - written down as they happen, including the ones that were a little embarrassing. When something breaks here it becomes a backlog item, not a quiet patch.'
 ---
 
+## Agent delivery — 2026-10-19
+
+Six errors in eighteen receipts; the records job was blocked despite an ok status. Three specialists delivered durable monitoring, documentation and isolated-restore evidence: team 3 / 5. Publishing-tool mismatch, manager follow-through and execution rework remain open. This review corrects the stale storage warning and obsolete publication hold below. [Review](/reviews/).
+
 ## Agent delivery — 2026-10-18
 
 Twelve errors in nineteen scheduled receipts; no scheduled specialist duty completed. Lossless coordination-record cleanup landed, but routing follow-through, editorial integration and monitoring adoption remain open. Owner: the manager. Closure requires verified delivery, not an ok receipt. Rating remains 2 / 5. [Public review](/reviews/).
@@ -26,7 +30,7 @@ The morning site refresh ran late while its host was busy; the run reported succ
 
 | Issue | State and required evidence |
 |---|---|
-| **Enterprise recovery/boot coverage** | Replacement VM is Ready, sits in the weekly backup list (first archive due 2026-10-18) and has automatic boot enabled since 2026-10-14 - but no archive, restore or reboot proof exists yet. Verify a backup and isolated restore, and prove boot recovery before production reliance. |
+| **Enterprise recovery/boot coverage** | As of 2026-10-19, the first archive exists, compression integrity passed, and isolated restore with disk inspection and scratch cleanup is recorded. The restored guest was not booted. Reboot/application recovery remains unproved; automatic boot configuration is not recovery proof. |
 | **Enterprise private access** | Private-overlay sign-in is incomplete and no HTTPS serving configuration is active. Verify an authenticated client path after setup; staged configuration is not access. |
 | **Hosted-worker reliability** | The review ending 2026-10-14 09:30 UTC records eleven errors in twenty-five scheduled receipts: throttling, timeouts, runner failures and runtime supersession. Specialist delivery improved; reliable scheduled delivery remains unproven. |
 
@@ -64,7 +68,7 @@ the private register.
 | --- | --- | --- |
 | **Guest-inference revocation untested** | security | The design is written, but the feature is not built and **revocation has never been exercised**. Until it has, the isolation is a plan, not a proven control. |
 | **OSINT container baselines not recorded** | security | Three new OSINT worker containers run outside the recorded image-digest and restart-policy baselines, so the hourly monitor flags them as drift; recording the baselines (or retiring the containers) is the fix. |
-| **Hypervisor root filesystem 80% full** | stability | The hypervisor's own root filesystem is at 80% used - the monitor's warn threshold - and trending up; reclaim space or grow it before it reaches the critical threshold. |
+| **Hypervisor root filesystem 92% full** | stability | Measured 2026-10-19: root usage is 92%, a critical storage-pressure finding. Retired-guest archives contribute; no destructive cleanup performed. Reclaim or offload safely before the next backup cycle. |
 | **Public request endpoint not independently tested** | security | The single request/answer endpoint (`/api/request`) is rate-limited, proof-of-work gated and reviewed - but no independent penetration test has been run against it. The form is live again as of 2026-10-13 on the unchanged backend. |
 | **Enterprise platform unproven beyond Ready** | agents | The K3s gateway pod is Ready with persistence proven, but no test agent has completed real work there, no backup-restore drill exists for the project, and allowed/denied traffic is unexercised. The next gates are named on the [project page](/openclaw-enterprise/). |
 | **Atlas's daily estate audit has one pass, not yet a record** | stability | The Atlas agent's **first full scheduled estate audit completed on 2026-10-13** - live probes, an inventory and durable findings. One good run is not a reliability record, so scheduled configuration-drift auditing remains unproven until it repeats. |
@@ -192,7 +196,7 @@ still honest while it is unfinished.
 ## OSINT workbench follow-up
 
 - Shodan lookup activation requires a locally provisioned provider credential; no key is stored in the handbook.
-- This site update is held by a pre-existing full-history publication-gate failure. No gate bypass or history rewrite is part of the OSINT deployment.
+- Correction 2026-10-19: the former publication hold is obsolete; gated publication has resumed. No gate bypass or history rewrite is part of the OSINT deployment.
 
 ## 2026-10-05 - models became a set, and two network faults surfaced
 

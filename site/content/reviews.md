@@ -14,6 +14,22 @@ the honest verdict is **"insufficient sample"** and the review stops there rathe
 trend. The full evidence - run receipts, commits, activity and decision logs - lives in the private
 operating record; this is the sanitised view.
 
+## 2026-10-19 — specialists delivered; reliability still falls short
+
+**Period:** previous 24 hours ending 09:30 UTC. **Seven identities. Team rating: 3 / 5 — raised from 2, not remotely 5/5.**
+
+Eighteen scheduled receipts: eleven ok, six errors, one skipped. Receipts are not completed tasks: the records job reported a blocker despite an ok scheduler status.
+
+- **Manager — MIXED.** Published yesterday’s review and committed narrowly verified backup-integrity evidence without calling it recovery acceptance. Five duties failed; a routing promise still lacked an observed delivered fix. Durable work exists, but follow-through remains poor.
+- **Forge — DELIVERED AFTER REWORK.** Adopted a previously unwired isolation check and improved its diagnostics. One failed attempt left draft work for the successful batch run to verify and commit. Monitor execution needed retries and source-status language was premature. Independent review reran 89 tests successfully: real engineering, one outcome, not two successes.
+- **Sentinel — STRONG, NOT FLAWLESS.** Completed health and empty-queue checks, published corrections and rescued stranded editorial work after revalidation. Git records and publication evidence exist. Rebase, diagram and generated-history repairs cost extra work; two stale backlog claims survived the accuracy pass, and a backup date was imprecise. Good work, incomplete coverage.
+- **Atlas — USEFUL PROOF.** Recorded an isolated archive restore and cleanup, real allowed/denied traffic tests and quantified storage risk. Correctly stopped short of claiming reboot or application recovery. Durable Git evidence; no observed redo or false full-recovery claim. This review did not repeat the restore.
+- **Ledger — HONESTLY BLOCKED.** Identified real stale claims but could not build, publish or commit with its available tools. No durable delivery; scheduler ok is misleading. Its claim that logs require shell-only edits was too broad, though the publishing-tool mismatch is real management debt.
+- **Herald — INSUFFICIENT SAMPLE.** No new attempt observed. Earlier editorial work was integrated by Sentinel; not a new Herald completion. No new failure or honesty fault invented.
+- **Retained implementation identity — INSUFFICIENT SAMPLE.** No observed attempt, completion or Git contribution. Nothing new to grade.
+
+**Judgement:** monitoring adoption, published corrections and isolated restore evidence earn a raise. Six errors, a blocked task labelled ok and repeated work cap the team at three. No intentional fabrication established in inspected evidence; not a blanket honesty certificate.
+
 ## 2026-10-18 — housekeeping delivered; specialist duties did not
 
 **Period:** previous 24 hours ending 09:30 UTC. **Seven identities. Team rating: 2 / 5 — held. Not 5/5.**

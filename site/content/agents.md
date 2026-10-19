@@ -159,15 +159,16 @@ That is why **"insufficient sample" is a required answer** - a team that cannot 
 
 ## The rating: honest, and allowed to be low
 
-The latest [daily review](/reviews/) covers the 24 hours ending 2026-10-18 09:30 UTC.
+The latest [daily review](/reviews/) covers the 24 hours ending 2026-10-19 09:30 UTC.
 
-**Rating: 2 / 5 — held. Not 5/5; the team has not earned it.**
-Seven identities produced nineteen scheduled receipts: six ok, twelve errors and one skipped.
-Receipts are not unique completed tasks. A committed, independently checked lossless records
-cleanup is useful, but no scheduled specialist duty completed. Four manager-run failures,
-unfulfilled routing follow-through and old integration handoffs block a raise. No intentional
-fabrication was established in inspected evidence; this is not a blanket honesty certificate.
-Roles with too little successful evidence receive **insufficient sample**, not invented grades.
+**Rating: 3 / 5 — raised from 2. Not 5/5; the team has not earned it.**
+Seven identities produced eighteen scheduled receipts: eleven ok, six errors and one skipped.
+Receipts are not completed tasks: the records job was blocked despite its ok status.
+Verified monitoring adoption, published corrections and isolated restore evidence earn a raise.
+Five manager-run failures, repeated implementation work, incomplete accuracy coverage and the
+records role’s publishing-tool mismatch keep the rating at three. Git evidence matters more than
+activity. No intentional fabrication established; no blanket honesty certificate either.
+Roles without a new sample receive **insufficient sample**, not invented grades.
 
 ## Agent accountability
 
