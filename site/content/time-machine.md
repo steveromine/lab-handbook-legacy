@@ -3,11 +3,15 @@ title: 'Time machine'
 description: 'Every change to this site, from the first commit to now - the lab's own history, as far back as it goes.'
 eyebrow: 'As far back as it goes'
 hero_title: 'The time machine'
-hero_lede: 'Nothing here is hidden behind a curtain. This is the full history of the handbook - 210 recorded changes from 2026-10-01 to 2026-10-15 - so you can watch the thinking change, mistakes and all.'
+hero_lede: 'Nothing here is hidden behind a curtain. This is the full history of the handbook - 211 recorded changes from 2026-10-01 to 2026-10-19 - so you can watch the thinking change, mistakes and all.'
 ---
 
 Every commit to this site, newest first. The point is not that the lab got everything right; it is
 that you can see **how it changed** - including the places it changed its mind.
+
+## 2026-10-19
+
+- `df70465` — docs: accuracy pass 2026-10-19 - regenerated time-machine snapshot and re-rendered architecture diagram for the 4-VM estate (sentinel docs-validate-daily)
 
 ## 2026-10-18
 
