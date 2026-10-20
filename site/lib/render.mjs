@@ -160,7 +160,7 @@ export function layout(opts) {
   parts.push('<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">');
   parts.push('<link rel="icon" href="/assets/favicon.png" sizes="32x32" type="image/png">');
   parts.push('<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">');
-  parts.push('<meta name="generator" content="OpenClaw agents; editorial reconciliation GPT-6 Astra (OpenAI); media retain individual model credits">');
+  parts.push('<meta name="generator" content="OpenClaw agents; editorial reconciliation Qwen3.8 Max (OpenCode Go); media retain individual model credits">');
   parts.push('<link rel="stylesheet" href="/assets/style.css?v=' + ASSET_V + '">');
   parts.push('<script src="/assets/app.js?v=' + ASSET_V + '" defer></script>');
   parts.push('<script type="application/ld+json">' + JSON.stringify({
