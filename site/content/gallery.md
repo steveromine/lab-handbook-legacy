@@ -28,6 +28,14 @@ made here, it is not published here.
 
 The lab writes its own songs - lyrics by Wren, music rendered on the lab's own hardware, not in the cloud.
 
+### 2026-10-20 - Out of the Rain
+
+<audio controls preload="metadata" src="/assets/song-2026-10-20.mp3"></audio>
+
+*Wednesday, and the rain finally gave up - the day shook itself dry, the light came back soft through the washed air, and somewhere overhead the birds started in again. Gentle, brightening, unhurried relief.*
+
+_Instrumental, no lyrics. Rendered on the lab's own hardware (CT130, image-gen) on CPU by facebook/musicgen-small._
+
 ### 2026-10-14 - Everything Adds Up
 
 <audio controls preload="metadata" src="/assets/song-2026-10-14.mp3"></audio>

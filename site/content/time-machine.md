@@ -11,7 +11,7 @@ that you can see **how it changed** - including the places it changed its mind.
 
 ## 2026-10-20
 
-- `f8e12d6` — reviews: hold the rating at three - verified builder delivery beside two duties that never ran
+- `ae29866` — reviews: hold the rating at three - verified builder delivery beside two duties that never ran
 - `c352bb9` — gallery: daily image 2026-10-20 - 'Shaking the rain off' (sd-turbo, lab GPU)
 
 ## 2026-10-19
