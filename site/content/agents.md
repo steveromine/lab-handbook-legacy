@@ -12,19 +12,21 @@ the main agent, and its role in the chart above is **Manager** - the coordinator
 names: a persona for the writing, a role for the org chart. When this page says "the Manager", it
 means Wren.
 
-**Seven agent identities are configured as of 2026-10-14.** These are the source fleet,
+**Seven agent identities are configured, reconciled 2026-10-20.** These are the source fleet,
 not agents migrated into Kubernetes. The table names configured routes, not guaranteed provider
-availability or a particular session's override. No automatic cross-provider fallback is configured.
+availability or a particular session's override. Every identity has the same fallback chain on the
+hosted route - free-tier models first, the lab's own local model as the floor - and no paid
+cross-provider fallback.
 
 | Identity | Responsibility | Configured route |
 |---|---|---|
-| `main` | Coordination, risk decisions and final verification | OpenAI GPT-6 Astra |
+| `main` | Coordination, risk decisions and final verification | OpenCode Go / Qwen3.8 Max |
 | `openai-api` | Retained model identity | OpenCode Go / Qwen3.8 Max |
-| `forge` | Build and implementation | OpenCode Go / Kimi K3 |
+| `forge` | Build and implementation | OpenCode Go / Qwen3.8 Flash |
 | `sentinel` | Review and audit | OpenCode Go / Kimi K3 |
-| `atlas` | Inventory and reconnaissance | OpenCode Go / DeepSeek V4 Flash |
-| `ledger` | Records and documentation | OpenCode Go / DeepSeek V4 Flash |
-| `herald` | Website development and truthful marketing | OpenCode Go / DeepSeek V4 Flash |
+| `atlas` | Inventory and reconnaissance | OpenCode Go / DeepSeek V4.1 Flash |
+| `ledger` | Records and documentation | OpenCode Go / Qwen3.8 Flash |
+| `herald` | Website development and truthful marketing | OpenCode Go / Qwen3.8 Flash |
 
 The local-model context limit was the earlier worker failure. Moving routes changed that constraint,
 but did not prove reliability: the latest recorded review still reports hosted-provider billing and

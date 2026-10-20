@@ -14,8 +14,9 @@ check, **2026-10-14**, counted **16 running container guests and 4 running virtu
 The earlier **38-workload snapshot (2026-10-05)** also counted nested containers; it is not a
 current inventory. No new nested-workload total is claimed.
 
-Seven source agent identities now include a dedicated website and marketing role. The coordinator
-uses OpenAI GPT-6 Astra; the other configured routes use OpenCode Go. The Kubernetes experiment
+Seven source agent identities now include a dedicated website and marketing role. As of 2026-10-20
+all seven configured routes use OpenCode Go on role-matched models, with a free-tier fallback chain.
+The Kubernetes experiment
 has a Ready gateway, but access, backup/boot coverage and end-to-end validation are unfinished.
 See [current status](/status/) and [the agent roster](/agents/).
 

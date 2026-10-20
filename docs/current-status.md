@@ -7,8 +7,9 @@ healthy core-service pods and a Bound persistent volume. It is not production-re
 overlay sign-in is unfinished; the replacement VM now sits in the weekly backup job (first
 archive written 2026-10-18; restore unproved) and automatic boot is enabled (set 2026-10-14), but
 neither recovery path has been proved by a real event. No source agent migrated.
-The source fleet has seven configured identities, including a website/marketing role. Main uses
-OpenAI GPT-6 Astra; other routes use OpenCode Go. Hosted-provider errors still affect workers.
+The source fleet has seven configured identities, including a website/marketing role. As of
+2026-10-20 all seven route through OpenCode Go on role-matched models, each with a free-tier
+fallback chain down to the local model. Hosted-provider errors still affect workers.
 The current guest count is 16 running containers + 4 VMs; nested workloads were not recounted.
 The website is active and its restored interactive features and professional redesign are preserved.
 

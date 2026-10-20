@@ -225,11 +225,12 @@ The last line matters as much as the first: the platform is expected to say what
 left alone, including the gaps it knows about.
 ## Current routing override
 
-Reconciled 2026-10-15: the seven configured identities run mixed hosted routes, without
-automatic provider fallback. **main** (the coordinator) uses OpenAI GPT-6 Astra; **forge** and
-**sentinel** use Kimi K3 on the OpenCode Go route; **atlas**, **ledger** and **herald** use
-DeepSeek V4 Flash on the same route; the retained **openai-api** identity uses Qwen3.8 Max.
-No identity runs on the lab's own local model at present - the local model remains the floor
-described below, not a current agent route. The tiered-model diagrams and descriptions below
-otherwise describe the target design, not current routing policy. See [rollout](rollout.md)
-for runtime verification gates and sequencing.
+Reconciled 2026-10-20: the seven configured identities run hosted OpenCode Go routes on
+role-matched models. **main** (the coordinator) and the retained **openai-api** identity use
+Qwen3.8 Max; **forge**, **ledger** and **herald** use Qwen3.8 Flash; **sentinel** uses Kimi K3;
+**atlas** uses DeepSeek V4.1 Flash. Every route carries the same fallback chain - free-tier hosted
+models first, the lab's local model as the floor - and no paid cross-provider fallback.
+No identity runs on the lab's own local model as its primary at present - the local model is the
+fallback floor described below, not a current agent primary. The tiered-model diagrams and
+descriptions below otherwise describe the target design, not current routing policy. See
+[rollout](rollout.md) for runtime verification gates and sequencing.
