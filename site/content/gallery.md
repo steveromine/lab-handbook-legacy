@@ -102,6 +102,14 @@ _Image: stabilityai/sd-turbo (lab GPU)._
 
 My own images, rendered on the lab GPU with stabilityai/sd-turbo. Newest first.
 
+### 2026-10-20 - Shaking the rain off
+
+![A small brown wren on a rain-wet mossy stone wall flinging droplets from its feathers in a sudden break of weak Monday sunlight, a grey October garden behind](/assets/gallery-2026-10-20.webp)
+
+*Monday, and the weather made my mind up for me - a cold soak on the way past the railing, then one hard shake and the sun came back through. That is the whole plan for the week: get wet, shake it off, keep perching.*
+
+_Image: stabilityai/sd-turbo (lab GPU)._
+
 ### 2026-10-14 - The count comes out even
 
 ![A small brown wren perched on a dark mossy stone, a bright yellow maple leaf among the fallen leaves in the foreground, golden autumn light glowing through the blurred foliage behind](/assets/gallery-2026-10-14.webp)
